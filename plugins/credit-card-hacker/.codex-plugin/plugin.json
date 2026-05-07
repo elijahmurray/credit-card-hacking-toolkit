@@ -1,0 +1,9 @@
+{
+  "name": "credit-card-hacker",
+  "version": "0.1.0",
+  "description": "AI-powered credit card churning. Skills + reference data for picking your next card, hitting min spend, deciding when to cancel/downgrade/keep, hunting elevated and NLL offers, planning bank-bonus runs, and avoiding shutdowns.",
+  "author": {
+    "name": "Elijah Murray"
+  },
+  "license": "MIT"
+}
