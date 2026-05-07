@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 
 export const metadata = {
@@ -31,15 +32,19 @@ const LINKS: ReadonlyArray<DashboardLink> = [
 
 export default async function DashboardPage() {
   const supabase = await createClient();
-  // Layout already redirected if no user; safe to assume one here.
+  // Layout normally redirects if no user, but layouts and pages render in
+  // parallel — guard here too so we don't throw before the redirect ships.
   const {
     data: { user },
   } = await supabase.auth.getUser();
+  if (!user) {
+    redirect("/login");
+  }
 
   const { data: profile } = await supabase
     .from("profiles")
     .select("onboarded, full_name")
-    .eq("id", user!.id)
+    .eq("id", user.id)
     .maybeSingle();
 
   const greetingName =
