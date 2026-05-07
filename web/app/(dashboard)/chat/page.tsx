@@ -22,12 +22,10 @@ export default async function ChatPage() {
     .eq("id", user.id)
     .maybeSingle();
 
-  // TODO: /onboarding route is owned by another agent and may not exist yet.
-  // When it lands, this redirect will start working. For now an unboarded user
-  // just lands in chat and the agent will guide them through getting-started.
+  // /onboarding now exists. Send un-onboarded users there to build their
+  // profile via the conversational getting-started flow before they can chat.
   if (profileRow && profileRow.onboarded === false) {
-    // Soft redirect — comment out if /onboarding is not yet implemented.
-    // redirect("/onboarding");
+    redirect("/onboarding");
   }
 
   return (
