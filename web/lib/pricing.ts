@@ -36,6 +36,7 @@ export const TIERS: Record<TierId, Tier> = {
   free: {
     id: "free",
     name: "Free",
+    priceMonthly: 0,
     // NOTE on quota choice (re-evaluated after measurement, 2026-05-06):
     // Static system prompt = ~37K tokens (CLAUDE.md + all 28 skill bodies).
     // With Anthropic 5-min ephemeral cache: ~$0.02/warm-msg, ~$0.15/cold-msg.
