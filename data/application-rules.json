@@ -85,6 +85,27 @@
         "confidence": "VERIFIED",
         "notes": "Popup can be partially mitigated via incognito browsing, applying through Resy (resy.com link with embedded offer), CardMatch targeted offers, or referral links from other users.",
         "see_also": "pop-up-jail-amex skill"
+      },
+      "family_tier_blocking_2023": {
+        "rule": "Starting Fall 2023, Amex introduced family-level tier-blocking. Within affected card families, once you have ever held a 'higher' card, you are ineligible for a 'lower' card's bonus. Personal Plat blocks Gold + Green bonuses. Gold blocks Green bonus. Same applies to personal Delta cards, personal Marriott cards, and Blue Cash family.",
+        "applies_to": [
+          "Personal Platinum -> blocks Personal Gold and Personal Green bonuses",
+          "Personal Gold -> blocks Personal Green bonus",
+          "Personal Delta tier ladder",
+          "Personal Marriott Bonvoy cards",
+          "Blue Cash family (BCE / BCP / Cash Magnet)"
+        ],
+        "not_affected": [
+          "All Amex business cards (Business Plat, Business Gold, Business Bonvoy, Business Delta — separate clocks per product)",
+          "Personal Hilton cards (no family tier-blocking)"
+        ],
+        "implications": [
+          "Avoid Amex personal cards while under 5/24 in most cases — burning a 5/24 slot for Plat now means losing future Gold + Green bonuses too.",
+          "Once over 5/24, work UP each family ladder: Green -> Gold -> Platinum to capture all bonuses. Don't skip tiers.",
+          "Exception: if you already had Green and/or Gold, you can still get Platinum bonus (the prior holding doesn't undo eligibility for the higher tier — only future lower tiers are blocked once you go higher)."
+        ],
+        "confidence": "VERIFIED",
+        "sources": ["m16p flowchart NOTES FOR AMEX CARD-FAMILY RULES", "https://m16p-churning.s3.us-east-2.amazonaws.com/Card+Recommendation+Flowchart+Latest.html"]
       }
     },
     "citi": {

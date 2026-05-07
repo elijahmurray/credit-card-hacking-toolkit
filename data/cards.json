@@ -265,19 +265,95 @@
       "notes": "New 2025 product. Verify current offer + benefits at application."
     },
     {
-      "id": "bilt",
-      "issuer": "Wells Fargo",
-      "name": "Bilt Mastercard",
+      "id": "bilt_mastercard_legacy",
+      "issuer": "Wells Fargo (discontinued for new applications post-2026 Bilt 2.0 launch)",
+      "name": "Bilt Mastercard (1.0 / legacy)",
       "type": "personal",
       "network": "Mastercard",
-      "family": "bilt",
+      "family": "bilt_1_0_legacy",
       "annual_fee": 0,
       "current_public_sub": null,
       "earning": { "rent_no_fee_up_to_100k_yr": 1, "dining": 3, "travel": 2, "everything_else": 1, "rent_day_1st_of_month": "2x on all non-rent (rent stays 1x)" },
       "transfer_partners": ["Air Canada", "Air France/KLM", "American", "British Airways", "Cathay", "Emirates", "Hawaiian", "Hyatt", "IHG", "Marriott", "Turkish", "United", "Virgin Atlantic"],
-      "perks": ["Only card that earns full points on rent without a fee", "Lyft 5x", "Status match Hyatt + IHG via Bilt status"],
+      "perks": ["Only card that earned full points on rent without a fee (pre-2026)", "Lyft 5x", "Status match Hyatt + IHG via Bilt status"],
       "confidence": "VERIFIED",
-      "notes": "No SUB. The 'churn' angle is rotation rewards + Rent Day. The strategic value is that rent (often the largest organic spend category) suddenly earns transferable points."
+      "status": "legacy_no_new_apps",
+      "notes": "Pre-2026 product. Replaced by Bilt 2.0 family (Palladium / Obsidian / Blue) issued by Column N.A. Holding the legacy Bilt does NOT block Bilt 2.0 SUB eligibility (different issuer, different product family per the welcome bonus wording)."
+    },
+    {
+      "id": "bilt_palladium",
+      "issuer": "Column N.A.",
+      "name": "Bilt Palladium",
+      "type": "personal",
+      "network": "Mastercard World Legend",
+      "family": "bilt_2_0",
+      "annual_fee": 495,
+      "annual_fee_waived_y1": false,
+      "current_public_sub": { "amount": 50000, "currency": "Bilt points", "msr": null, "msr_months": null, "extra": "+ Bilt Gold Status + $300 Bilt Cash", "valuation_floor_cpp": 1.5 },
+      "credits": [
+        { "name": "Bilt Travel Hotel credits (semi-annual)", "amount": 200, "trigger": "minimum two-night stay via Bilt Travel", "friction": "medium", "notes": "Two $200 credits per year; semi-annual reset" },
+        { "name": "Bilt Cash annual", "amount": 200, "friction": "low", "notes": "$200 in Bilt Cash credited annually" }
+      ],
+      "earning": {
+        "housing_up_to_1x": "1x on housing, capped (vs old Bilt 1x uncapped)",
+        "everything_else_points": 2,
+        "everything_else_bilt_cash": "+4% Bilt Cash (separate currency from points)"
+      },
+      "perks": ["Priority Pass", "Mastercard World Legend benefits (purchase protection, extended warranty, price drop protection)", "No FTF", "10% intro APR / 12 months"],
+      "lounge_access": "Priority Pass",
+      "status_grants": [{ "program": "Bilt Rewards", "tier": "Gold (with SUB)" }],
+      "transfer_partners": ["American", "Hyatt", "United", "Air Canada Aeroplan", "Alaska", "Air France/KLM", "British Airways", "Cathay", "Emirates", "Singapore", "Turkish", "Virgin Atlantic", "Hilton", "IHG", "Marriott"],
+      "sub_eligibility_wording": "Welcome bonuses are available only to those who do not currently hold a Bilt Card 2.0 issued by Column N.A., have not previously held a Bilt Card 2.0 issued by Column N.A., and have not received a Bilt Card 2.0 issued by Column N.A. welcome bonus in the past.",
+      "confidence": "VERIFIED",
+      "source": "https://biltrewards.com/card + r/churning Bilt 2.0 megathread",
+      "notes": "Top-tier Bilt 2.0. SUB eligibility is FAMILY-WIDE across all 3 Bilt 2.0 cards (one SUB ever). Pick this tier if you have high spend AND want lounge + status. Housing 'up to 1X' means capped — confirm cap details at application. Apply via TPG affiliate link for 5x non-housing for first 5 days bonus."
+    },
+    {
+      "id": "bilt_obsidian",
+      "issuer": "Column N.A.",
+      "name": "Bilt Obsidian",
+      "type": "personal",
+      "network": "Mastercard World Elite",
+      "family": "bilt_2_0",
+      "annual_fee": 95,
+      "annual_fee_waived_y1": false,
+      "current_public_sub": { "amount": 200, "currency": "Bilt Cash", "msr": null, "msr_months": null, "extra": "no points, $200 cash" },
+      "credits": [
+        { "name": "Bilt Travel Hotel credits (semi-annual)", "amount": 50, "trigger": "minimum two-night stay via Bilt Travel", "friction": "medium" }
+      ],
+      "earning": {
+        "housing_up_to_1x": "1x housing capped",
+        "dining_or_groceries_user_choice": "3x (grocery cap $25K/year)",
+        "travel": 2,
+        "everything_else_points": 1,
+        "everything_else_bilt_cash": "+4% Bilt Cash on non-housing"
+      },
+      "perks": ["Mastercard World Elite everyday benefits (trip delay, extended warranty)", "No FTF", "10% intro APR / 12 months"],
+      "transfer_partners": ["same as Palladium — Bilt 2.0 transfer partners"],
+      "sub_eligibility_wording": "Welcome bonuses are available only to those who do not currently hold a Bilt Card 2.0 issued by Column N.A., have not previously held a Bilt Card 2.0 issued by Column N.A., and have not received a Bilt Card 2.0 issued by Column N.A. welcome bonus in the past.",
+      "confidence": "VERIFIED",
+      "source": "https://biltrewards.com/card + r/churning Bilt 2.0 megathread",
+      "notes": "Mid-tier. Best value if you want category multipliers (3x dining or 3x grocery user-choice) without the Palladium AF. Family-wide SUB lockout — only get this if you don't want Palladium SUB."
+    },
+    {
+      "id": "bilt_blue",
+      "issuer": "Column N.A.",
+      "name": "Bilt Blue",
+      "type": "personal",
+      "network": "Mastercard World Elite",
+      "family": "bilt_2_0",
+      "annual_fee": 0,
+      "current_public_sub": { "amount": 100, "currency": "Bilt Cash", "msr": null, "msr_months": null, "extra": "no points, $100 cash" },
+      "earning": {
+        "housing_up_to_1x": "1x housing capped",
+        "everything_else_points": 1,
+        "everything_else_bilt_cash": "+4% Bilt Cash"
+      },
+      "perks": ["Mastercard World Elite benefits", "No FTF"],
+      "sub_eligibility_wording": "Welcome bonuses are available only to those who do not currently hold a Bilt Card 2.0 issued by Column N.A., have not previously held a Bilt Card 2.0 issued by Column N.A., and have not received a Bilt Card 2.0 issued by Column N.A. welcome bonus in the past.",
+      "confidence": "VERIFIED",
+      "source": "https://biltrewards.com/card + r/churning Bilt 2.0 megathread",
+      "notes": "Free-AF entry into Bilt 2.0 ecosystem. Use if you want rent-to-points access without paying AF, OR as a fallback if Palladium/Obsidian don't justify AF for your spend. Family-wide SUB lockout applies — taking the $100 here means giving up the larger Palladium/Obsidian SUBs forever."
     },
     {
       "id": "us_bank_smartly",

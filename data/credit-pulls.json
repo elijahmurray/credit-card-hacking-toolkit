@@ -1,0 +1,87 @@
+{
+  "_meta": {
+    "last_updated": "2026-05-06",
+    "staleness_days": 365,
+    "primary_sources": [
+      "https://www.doctorofcredit.com/credit-card-application-credit-bureau-pulls/",
+      "https://wallethub.com/answers/cc/credit-bureau-pull-by-card-issuer-1000028-2140697080/",
+      "r/CreditCards crowd-sourced bureau pull threads"
+    ],
+    "notes": "Which bureau each issuer pulls. Varies by state (CA/FL get Experian preference for some; TX often Equifax). Knowing the bureau lets you sequence apps to spread inquiries across bureaus.",
+    "schema_version": 1
+  },
+  "by_issuer": {
+    "chase": {
+      "primary": "Experian",
+      "alternates_by_state": { "FL": "Experian", "CA": "Experian", "TX": "Experian" },
+      "personal_pull": "single hard pull",
+      "business_pull": "personal hard pull (Chase Ink/Business pulls personal credit)",
+      "soft_pull_for_pre_approval": true,
+      "notes": "Chase rarely pulls Equifax. Most users see Experian."
+    },
+    "amex": {
+      "primary": "Experian",
+      "alternates_by_state": {},
+      "personal_pull": "single hard pull (sometimes none if existing relationship)",
+      "business_pull": "soft pull for many existing Amex customers; hard for new",
+      "soft_pull_for_pre_approval": true,
+      "notes": "Amex famously soft-pulls when you have an existing relationship. New cardholders almost always hard pull."
+    },
+    "citi": {
+      "primary": "Equifax",
+      "alternates_by_state": { "TX": "Equifax", "FL": "Equifax", "CA": "Experian" },
+      "personal_pull": "single hard pull",
+      "business_pull": "single hard pull",
+      "soft_pull_for_pre_approval": true,
+      "notes": "Sometimes pulls Experian instead — DPs vary."
+    },
+    "bank_of_america": {
+      "primary": "TransUnion",
+      "alternates_by_state": { "CA": "Experian", "TX": "Equifax" },
+      "personal_pull": "single hard pull",
+      "business_pull": "single hard pull",
+      "soft_pull_for_pre_approval": true
+    },
+    "us_bank": {
+      "primary": "TransUnion",
+      "alternates_by_state": { "CA": "Experian", "TX": "Equifax" },
+      "personal_pull": "single hard pull",
+      "business_pull": "single hard pull",
+      "soft_pull_for_pre_approval": true
+    },
+    "capital_one": {
+      "primary": "all three (TU + EQ + EX)",
+      "alternates_by_state": {},
+      "personal_pull": "TRIPLE hard pull (TU, EQ, EX simultaneously)",
+      "business_pull": "triple hard pull",
+      "soft_pull_for_pre_approval": true,
+      "notes": "Cap One is unique: pulls all three bureaus on every application. One Cap One app = three inquiries. This is why churning Cap One is generally not worth it."
+    },
+    "barclays": {
+      "primary": "TransUnion",
+      "alternates_by_state": { "CA": "Experian" },
+      "personal_pull": "single hard pull",
+      "business_pull": "single hard pull",
+      "soft_pull_for_pre_approval": false
+    },
+    "wells_fargo": {
+      "primary": "Experian",
+      "alternates_by_state": { "TX": "Equifax", "FL": "Equifax" },
+      "personal_pull": "single hard pull",
+      "business_pull": "single hard pull (does NOT report to personal bureaus though)",
+      "soft_pull_for_pre_approval": true
+    },
+    "discover": {
+      "primary": "TransUnion",
+      "alternates_by_state": { "FL": "Equifax", "CA": "Experian" },
+      "personal_pull": "single hard pull",
+      "business_pull": "single hard pull (DOES report to personal bureaus, counts toward 5/24)",
+      "soft_pull_for_pre_approval": true
+    }
+  },
+  "tactical_use": {
+    "spread_inquiries_across_bureaus": "If app-day with 3 cards: Chase (EX) + Citi (EQ) + BoA (TU) = one hard inquiry per bureau, none compounded.",
+    "minimize_total_inquiries": "Chase + Amex same day = both EX. Two inquiries on Experian, none on EQ/TU. May matter if applying for mortgage soon and you want EX clean.",
+    "freeze_unused_bureaus": "If all your applications hit one bureau (e.g., BoA-heavy = TU), you can freeze the other two bureaus for fraud protection without affecting your CC apps. ChexSystems is separate."
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "_meta": {
+    "last_updated": "2026-05-06",
+    "staleness_days": 30,
+    "primary_sources": [
+      "https://www.doctorofcredit.com/freedom-flex-bonus-categories/",
+      "https://www.discover.com/credit-cards/cash-back/it-card.html",
+      "Each issuer's quarterly category page"
+    ],
+    "notes": "Quarterly bonus categories for the four major rotator cards. Update at the start of each quarter (Jan 1, Apr 1, Jul 1, Oct 1). Activation required for Freedom Flex and Discover IT — Custom Cash and Customized Cash are auto.",
+    "schema_version": 1
+  },
+  "current_quarter": {
+    "year": 2026,
+    "quarter": 2,
+    "starts": "2026-04-01",
+    "ends": "2026-06-30",
+    "freedom_flex": {
+      "categories": ["Amazon", "Target", "Drugstores"],
+      "cap": 1500,
+      "activation_required": true,
+      "activate_at": "https://www.chase.com/personal/credit-cards/freedom-flex-rotating-categories"
+    },
+    "discover_it": {
+      "categories": ["Restaurants", "Drugstores"],
+      "cap": 1500,
+      "activation_required": true,
+      "activate_at": "https://www.discover.com/credit-cards/cashback-bonus/calendar/"
+    }
+  },
+  "next_quarter": {
+    "year": 2026,
+    "quarter": 3,
+    "starts": "2026-07-01",
+    "ends": "2026-09-30",
+    "freedom_flex": {
+      "categories": ["TBD — Chase announces ~2 weeks before quarter start"],
+      "expected_pattern": "Q3 historically: gas + EV charging, dining"
+    },
+    "discover_it": {
+      "categories": ["TBD"],
+      "expected_pattern": "Q3 historically: gas + grocery"
+    }
+  },
+  "historical_q4_patterns": {
+    "freedom_flex": ["PayPal + Walmart (frequently)", "Target + Amazon (sometimes)"],
+    "discover_it": ["Amazon + Target (frequently)", "PayPal (sometimes)"]
+  },
+  "always_on_rotators": {
+    "boa_customized_cash_rewards": {
+      "user_chooses_one": ["gas (default)", "online shopping", "dining", "travel", "drug stores", "home improvement"],
+      "rate": "3% on chosen, 2% on grocery, 1% else",
+      "with_platinum_honors_75pct_multiplier": "5.25% on chosen",
+      "cap_per_quarter": 2500,
+      "activation_required": false,
+      "notes": "Change category once per calendar month."
+    },
+    "citi_custom_cash": {
+      "rate": "5% on top spend category each statement",
+      "eligible_categories": [
+        "Restaurants",
+        "Gas Stations",
+        "Grocery Stores",
+        "Select Travel",
+        "Select Transit",
+        "Select Streaming Services",
+        "Drugstores",
+        "Home Improvement Stores",
+        "Fitness Clubs",
+        "Live Entertainment"
+      ],
+      "cap_per_billing_cycle": 500,
+      "activation_required": false,
+      "notes": "Auto-rewards whichever eligible category had highest spend each cycle."
+    }
+  }
+}

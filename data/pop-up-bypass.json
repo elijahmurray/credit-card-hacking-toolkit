@@ -1,0 +1,95 @@
+{
+  "_meta": {
+    "last_updated": "2026-05-06",
+    "staleness_days": 30,
+    "primary_sources": [
+      "https://frequentmiler.com/?s=amex+popup",
+      "https://www.doctorofcredit.com/?s=amex+popup",
+      "r/awardtravel + r/churning Amex popup DPs"
+    ],
+    "notes": "Methods (in order of effectiveness) for getting Amex SUB-eligibility past the in-flow popup. Effectiveness shifts as Amex tightens model — re-verify quarterly.",
+    "schema_version": 1
+  },
+  "methods": [
+    {
+      "method": "resy_targeted",
+      "description": "Apply via Resy iOS app -> Offers tab, OR via direct Resy email/web link. Different offer ID and routing.",
+      "effectiveness_2026": "high",
+      "evidence": "DPs from FrequentMiler comments + r/churning regularly show Resy bypassing popup AND carrying elevated SUB AND sometimes omitting once-per-lifetime language",
+      "downside": "Need a Resy account with usage history to receive the offer. Not all users get them.",
+      "confidence": "VERIFIED"
+    },
+    {
+      "method": "cardmatch_targeted",
+      "description": "Visit cardmatch.creditcards.com, enter SSN. Targeted offers shown have unique URLs.",
+      "effectiveness_2026": "medium-high",
+      "evidence": "Many DPs of CardMatch Plat / Gold offers bypassing popup; some hit popup anyway",
+      "downside": "Requires soft-pull SSN check. Not every user is shown Amex offers.",
+      "confidence": "LIKELY"
+    },
+    {
+      "method": "nll_email_offer",
+      "description": "Amex sometimes sends targeted email offers explicitly omitting 'have or have had this Card' language. Apply within the email's window (24-72hr typical).",
+      "effectiveness_2026": "high when received",
+      "evidence": "FrequentMiler covers each major NLL drop. r/churning Amex NLL megathread.",
+      "downside": "Not predictable. You wait until you receive one.",
+      "confidence": "VERIFIED"
+    },
+    {
+      "method": "referral_link",
+      "description": "Apply via another user's referral link (spouse, family member). Different routing in some cases.",
+      "effectiveness_2026": "low-medium",
+      "evidence": "Mixed DPs. Sometimes bypasses popup; often does not.",
+      "downside": "Even when popup bypassed, the offer may carry standard rather than elevated SUB.",
+      "confidence": "LIKELY"
+    },
+    {
+      "method": "incognito_browsing",
+      "description": "Apply in private/incognito window not signed into amex.com.",
+      "effectiveness_2026": "low",
+      "evidence": "Most DPs report popup persists across incognito; some report bypass when COMBINED with another method (Resy offer in incognito)",
+      "downside": "Issuer fraud detection sometimes flags incognito as unusual",
+      "confidence": "LIKELY"
+    },
+    {
+      "method": "in_branch_phone_app",
+      "description": "Some Amex products allow phone or branch application that uses different routing than online.",
+      "effectiveness_2026": "very_low",
+      "evidence": "Rare DPs of bypass. Most products are online-only at this point.",
+      "downside": "Limited product availability; CSR cannot manually remove the popup.",
+      "confidence": "UNVERIFIED"
+    }
+  ],
+  "what_does_not_work": [
+    {
+      "method": "clearing_cookies",
+      "reason": "Popup is server-side per SSN, not client-side."
+    },
+    {
+      "method": "vpn_or_different_ip",
+      "reason": "Application requires SSN + address; mismatched IP triggers fraud check, not bypass."
+    },
+    {
+      "method": "calling_amex_to_remove_popup",
+      "reason": "CSRs explicitly cannot override the bonus eligibility model."
+    },
+    {
+      "method": "trying_again_next_day",
+      "reason": "Popup persists. Wait 60-90 days minimum for the model to re-evaluate."
+    }
+  ],
+  "popup_recovery": {
+    "if_you_hit_the_popup": [
+      "Do NOT submit. Close the application window.",
+      "The card will be approved without SUB eligibility if you submit.",
+      "Wait 60-90 days minimum before retrying any Amex application.",
+      "Use the wait period to wait for Resy / CardMatch / NLL offer."
+    ],
+    "if_you_already_submitted_and_got_no_sub": [
+      "The card is approved with no SUB. No way to retroactively earn the SUB.",
+      "Decide whether to keep the card for the earning rate alone (often not worth AF).",
+      "Closing within 12 months has clawback but if no SUB earned, no claw to back. Safe to close anytime.",
+      "Closing too many recently-opened Amex cards can affect future Amex eligibility."
+    ]
+  }
+}

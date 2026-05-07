@@ -1,0 +1,96 @@
+{
+  "_meta": {
+    "last_updated": "2026-05-06",
+    "staleness_days": 14,
+    "primary_sources": [
+      "https://www.cashbackmonitor.com/",
+      "https://www.rakuten.com/",
+      "https://www.topcashback.com/",
+      "Each airline mileage shopping portal"
+    ],
+    "notes": "Portal rates change daily. This is a snapshot for top merchants. Always verify current rates at cashbackmonitor.com which compares all portals in real time. Portals require fresh browser session, click-through to merchant, and 30-90 day credit window.",
+    "schema_version": 1
+  },
+  "portals": {
+    "rakuten": {
+      "type": "cashback",
+      "payout": "cash (or Amex MR if Amex linked, often higher rates in MR mode)",
+      "min_payout": 5,
+      "payout_frequency": "quarterly (Feb / May / Aug / Nov)",
+      "browser_extension": true,
+      "notes": "Largest portal. Often has elevated bonuses (e.g., Apple bonus to 6%). Linking Amex to receive payout in MR sometimes shows 1-2% higher rates than cash mode."
+    },
+    "topcashback": {
+      "type": "cashback",
+      "payout": "cash only",
+      "min_payout": 0.01,
+      "payout_frequency": "on-demand (PayPal) or annual",
+      "browser_extension": false,
+      "notes": "Best base rates for most merchants. Slower to credit but reliable."
+    },
+    "capital_one_shopping": {
+      "type": "cashback + automatic coupons",
+      "payout": "Capital One Shopping Rewards (redeemable as Amazon GCs or check)",
+      "browser_extension": true,
+      "notes": "Auto-applies coupons at checkout. Rates often comparable to Rakuten. Available even without Cap One credit card."
+    },
+    "united_mileageplus_x": {
+      "type": "miles",
+      "payout": "United MileagePlus miles",
+      "browser_extension": false,
+      "notes": "Mobile app for dining + retail miles. Linked dining + retail purchases earn 1-3 miles per dollar."
+    },
+    "aadvantage_eshopping": {
+      "type": "miles",
+      "payout": "American AAdvantage miles",
+      "browser_extension": true,
+      "notes": "Similar to other airline portals. AA also has the SimplyMiles dining program."
+    },
+    "alaska_mileage_plan_shopping": {
+      "type": "miles",
+      "payout": "Alaska miles",
+      "browser_extension": true
+    },
+    "delta_skymiles_shopping": {
+      "type": "miles",
+      "payout": "Delta SkyMiles"
+    },
+    "hilton_shopping_mall": {
+      "type": "hotel_points",
+      "payout": "Hilton Honors points",
+      "notes": "Modest rates. Typically 1-3 Hilton points per dollar at major retailers."
+    }
+  },
+  "sample_top_merchants_2026_q2": {
+    "Apple": {
+      "rakuten": "1% (occasionally 4-6% during promos)",
+      "topcashback": "1.05%",
+      "united_x": "1 mile/$",
+      "best_during_holiday": "Watch for Black Friday 5%+ from Rakuten"
+    },
+    "Best Buy": {
+      "rakuten": "0.5-2%",
+      "topcashback": "0.6%",
+      "stack_with_amex_offer": "Frequent $25 off $250 Amex Offers"
+    },
+    "Macy's": {
+      "rakuten": "3-10% (promo frequent)",
+      "topcashback": "5%"
+    },
+    "Nike": {
+      "rakuten": "2%",
+      "topcashback": "2.5%",
+      "alaska": "3 miles/$"
+    },
+    "Sephora": {
+      "rakuten": "2-4%",
+      "topcashback": "2.5%"
+    }
+  },
+  "important_caveats": [
+    "Mobile app purchases often don't track. Use desktop or mobile browser.",
+    "Closing tabs between portal click and checkout invalidates the cookie.",
+    "Some merchants explicitly exclude purchases on certain product lines (Apple device upgrades, Best Buy MacBooks, etc.).",
+    "Recurring subscriptions only credit the FIRST payment, not renewals."
+  ]
+}

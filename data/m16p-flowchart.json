@@ -1,0 +1,230 @@
+{
+  "_meta": {
+    "last_updated": "2026-05-06",
+    "source_last_updated": "2025-06-09",
+    "staleness_days": 180,
+    "primary_sources": [
+      "https://m16p-churning.s3.us-east-2.amazonaws.com/Card+Recommendation+Flowchart+Latest.html",
+      "/u/m16p (maintainer), /u/kevlarlover (original), /u/goatfresh (visual)",
+      "https://www.reddit.com/r/churning/"
+    ],
+    "notes": "Structured rendering of the m16p Card Recommendation Flowchart (v21, June 2025) — the de-facto r/churning recommendation guide. Captures the under-5/24 vs over-5/24 dichotomy, Chase priority orders, spacer strategy, and the Fall 2023 Amex family rules. Opening-bonus agnostic by design — pair with sub-sweet-spots / elevated-offers for current SUBs. Cite this file and/or the URL above when surfacing m16p logic to the user.",
+    "schema_version": 1
+  },
+  "top_level_decision": {
+    "question": "Travel rewards or cashback as primary goal?",
+    "branches": ["travel", "cashback"]
+  },
+  "second_level_decision": {
+    "question": "Are you under 5/24?",
+    "branches": ["under_5_24", "over_5_24"]
+  },
+  "travel_under_5_24": {
+    "approach": "Chase-first. Apply for one Chase card every 3+ months, with 6+ months between Chase business cards. Use non-Chase business cards as 5/24-safe spacers.",
+    "velocity_rules": [
+      "Chase apps (personal or business): 3+ months between",
+      "Chase business cards: 6+ months between business apps specifically",
+      "Likely cap of 2 open Chase business cards when applying for new one",
+      "Don't close any card before 1 year"
+    ],
+    "chase_personal_priority": [
+      { "card": "Sapphire Preferred or Reserve", "notes": "Top of every list; family 48-mo lockout" },
+      { "card": "United Quest", "notes": "Or Explorer or Club Aeroplan" },
+      { "card": "United Explorer", "notes": "Often paired with Quest" },
+      { "card": "United Club Aeroplan", "notes": "" },
+      { "card": "Southwest Priority or Plus", "notes": "Time so bonuses post Jan/Feb to maximize Companion Pass" },
+      { "card": "Marriott Boundless", "notes": "Read NOTES FOR MARRIOTT CARDS — eligibility rules confusing" },
+      { "card": "IHG Premier", "notes": "" },
+      { "card": "World of Hyatt", "notes": "No good bonus in years; 'good' means 50K+ with MSR ≤ $6K" },
+      { "card": "British Airways / Aer Lingus / Iberia", "notes": "Avios family — same 24mo per-product clock" },
+      { "card": "Freedom Flex and/or Unlimited", "notes": "No-AF earner; converts to UR if held with CSP/CSR/Ink" }
+    ],
+    "chase_business_priority": [
+      { "card": "Ink Cash, Unlimited, Preferred", "notes": "Rotate based on current bonuses; no family lockout, 24mo per-product" },
+      { "card": "United Business", "notes": "" },
+      { "card": "Hyatt Business", "notes": "" },
+      { "card": "Southwest Business Premier and/or Performance", "notes": "Time for Companion Pass" },
+      { "card": "IHG Business", "notes": "" }
+    ],
+    "spacer_strategy_non_chase_biz": {
+      "principle": "Non-Chase business cards don't count toward 5/24 (with exceptions). Use them between Chase apps.",
+      "exceptions_that_count_toward_5_24": [
+        "Most Capital One business cards EXCEPT Spark Cash Plus and Venture X Business",
+        "Discover business cards (report to personal bureaus)"
+      ],
+      "issuers_to_consider": [
+        { "issuer": "Amex", "notes": "Easiest business cards to get. Bonuses vary wildly. Note 1/5 day, 2/90, 5-credit-card limit (charge cards exempt)." },
+        { "issuer": "Barclays", "notes": "Soft 6/24 rule — get Barclays biz while under 5/24. Options: JetBlue, Hawaiian, Wyndham." },
+        { "issuer": "BoA", "notes": "Alaska Biz, Biz Cash cards. May require opening a CD to 'secure' the card." },
+        { "issuer": "Cap1", "notes": "ONLY Venture X Business or Spark Cash Plus (others show on personal report)." },
+        { "issuer": "Citi", "notes": "AA Biz. Usually requires 5+ years of credit history." },
+        { "issuer": "US Bank", "notes": "Leverage, Biz Altitude Connect, Biz Triple Cash. Be very careful with MS." },
+        { "issuer": "Wells Fargo", "notes": "Signify Biz card. Requires WF bank account 2+ months old." }
+      ]
+    },
+    "cards_possibly_worth_burning_a_5_24_slot": [
+      {
+        "card": "Capital One Venture or Venture X 75K+ offer",
+        "rationale": "Cap1 almost never approves above 5-6/24. Venture points transfer 1:1 to airlines. Get while you can."
+      },
+      {
+        "card": "Citi Strata Premier 75K+ offer",
+        "rationale": "48-month timer; better to start it sooner."
+      },
+      {
+        "card": "Bilt",
+        "rationale": "Only if rent ≥ $4K/month AND will be under 5/24 for a year+ still AND have non-rent spend for other MSRs."
+      },
+      {
+        "card": "New all-time-high offers",
+        "rationale": "Occasionally a too-good-to-pass-up offer comes around."
+      },
+      {
+        "card": "Cards going away soon",
+        "rationale": "E.g. as of first half of 2025, Barclays AA and Hawaiian cards were going away."
+      }
+    ]
+  },
+  "travel_over_5_24": {
+    "approach": "Work down the priority list from biggest current SUB to smallest. Spread apps across banks over time. Respect each bank's velocity rules.",
+    "velocity_rules_by_issuer": {
+      "amex": "2/90 (max 2 credit cards in 90 days), 5-credit-card limit (charge cards exempt), 1/90 same-card",
+      "barclays": "6/24 (soft)",
+      "citi": "8/65 (max 1 personal per 8 days, 2 personal per 65 days), 6/6",
+      "boa": "2/3/4 (2 cards in 30 days, 3 in 12 months, 4 in 24 months) and 3/12-or-7/12 across all issuers"
+    },
+    "priority_order_when_5_plus_24": [
+      { "tier": 1, "rationale": "Last chance windows + Cap1 approval cliff", "cards": [
+        "If exactly 5/24: 1-2 Barclays cards (same day if 2). JetBlue Plus, AA, Hawaiian, Wyndham. At 6+/24 expect denial.",
+        "If 5-6/24: Cap1 Venture or Venture X (Cap1 doesn't approve much above 5-6/24, no recon).",
+        "Citi Strata Premier 70K+ offers (inquiry-sensitive, may need 0-1/6)."
+      ]},
+      { "tier": 2, "rationale": "Strong banks where relationship helps", "cards": [
+        "BoA: Alaska personal/biz, Virgin Atlantic, Air France, Premium Rewards (and Elite). Bank account helps approvals.",
+        "Amex charge + co-branded cards (mind family rules — see notes_amex_family_rules below).",
+        "Targeted NLL offers or upgrade offers for Amex cards you've had before."
+      ]},
+      { "tier": 3, "rationale": "Earner cards + niche", "cards": [
+        "Amex Blue Business Plus (great keeper for 2x earning + free MR account holder).",
+        "Wells Fargo Autograph Journey.",
+        "Citi AA personal and/or biz.",
+        "Bilt if rent ≥ $2K (high priority if ≥$4K).",
+        "High-bonus cashback cards from cashback column (BoA biz, US Bank biz, NavyFed Flagship)."
+      ]},
+      { "tier": 4, "rationale": "Smaller bonuses, niche programs", "cards": [
+        "Citi Custom Cash 30K (no TYP-card 24mo reset).",
+        "US Bank FlexPerks Gold.",
+        "Other travel cards: Avianca Vuela, Qatar, Lufthansa, Korean Air, Amtrak, Best Western, Choice, Expedia.",
+        "$100-$150 bonus cards from CUs."
+      ]}
+    ]
+  },
+  "cashback_path": {
+    "approach": "Same overall approach as travel but cash-equivalent priorities. Often Cap1 Venture/Venture X are the path even if you 'want cashback' (redeem for travel-purchase erasure).",
+    "priority_order": [
+      "Capital One Venture or Venture X (redeem essentially for cash)",
+      "BoA Biz Unlimited / Customized Cash ($500+)",
+      "BoA Premium Rewards (regular and Elite)",
+      "US Bank Leverage Card ($750+)",
+      "US Bank Business Altitude Connect ($600-$750)",
+      "US Bank Triple Cash Business ($500-$750)",
+      "Cap1 Spark Cash Plus (6 months after Venture)",
+      "Cap1 Spark Miles (6 months after Spark Cash)",
+      "Wells Fargo Signify Business (requires 1+yr WF bank account)",
+      "PenFed Pathfinder",
+      "NavyFed Flagship",
+      "US Bank Altitude Reserve (inquiries probably need to be 0/6 and ≤2/12)",
+      "Citi Strata Premier 70K+ (inquiries may need to be 0-1/6)",
+      "Amex Blue Business Cash",
+      "Amex BCE ($250+) and BCP ($300+)",
+      "Capital One Savor (6 months after Spark)",
+      "Amex MR cards (with Schwab Plat, MR redeems to Schwab at 1.1cpp)",
+      "One-off CU credit cards with big bonuses (follow DoC)",
+      "US Bank Altitude Connect",
+      "Plenty of $100-$150 bonus cards from smaller banks/CUs when way past 5/24"
+    ]
+  },
+  "notes_amex_family_rules": {
+    "effective_since": "Fall 2023",
+    "rule": "Within affected card families, once you ever have a 'higher' card, you are ineligible for the 'lower' card's bonus.",
+    "affected_families": [
+      "Personal Platinum / Gold / Green: Platinum blocks Gold + Green bonuses. Gold blocks Green bonus.",
+      "Personal Delta cards (similar tier blocking)",
+      "Personal Marriott cards",
+      "Blue Cash cards (BCE / BCP / Cash Magnet)"
+    ],
+    "not_affected_yet": [
+      "All Amex business cards",
+      "Personal Hilton cards"
+    ],
+    "implications": [
+      "Recommend avoiding Amex personal cards until 5+/24 in most cases.",
+      "Exception: if you already had Green and/or Gold, getting Platinum may still be fine.",
+      "Exception: if you can't get business cards and need a specific perk (e.g., free checked bag on Delta), Amex Delta Gold may be worth a 5/24 slot.",
+      "Once 5+/24, work your way UP each family ladder: Green first, then Gold (same family), then Platinum. Avoid super-low bonuses like Delta Blue regardless."
+    ]
+  },
+  "notes_marriott_cards": {
+    "rule": "Marriott cards have very confusing eligibility rules across Chase + Amex.",
+    "paths": [
+      {
+        "name": "Get all the Marriott cards",
+        "steps": [
+          "Start with Chase Boundless and Bountiful while under 5/24.",
+          "24 months after receiving those bonuses, start Amex Marriott cards.",
+          "If still under 5/24 start with Amex Business Bonvoy.",
+          "To get Bevy: cancel Boundless+Bountiful and wait 30 days (judgment call).",
+          "Can't get Bevy if you've had Brilliant."
+        ]
+      },
+      {
+        "name": "Focus on possible-keeper cards",
+        "keepers": ["Boundless", "Ritz (only via upgrade from Chase personal Marriott)", "Business", "Brilliant"],
+        "steps": [
+          "Get Chase Boundless + Bountiful.",
+          "Downgrade Bountiful to Bold after a year.",
+          "Get Business + Brilliant 24 months after Boundless+Bountiful bonuses.",
+          "Upgrade Bold to Ritz after Brilliant bonus."
+        ]
+      },
+      {
+        "name": "Stick to one issuer",
+        "tradeoffs": [
+          "Amex side: 3 worthwhile Bonvoy cards, no 5/24 burn, but uses Amex 5-card limit.",
+          "Chase side: 2 worthwhile Bonvoy cards, no Amex slot used, but 5/24 burn."
+        ]
+      }
+    ]
+  },
+  "notes_2_player_mode": {
+    "principles": [
+      "Don't add each other as authorized users on personal cards — AUs add to 5/24 count.",
+      "Use each-other's referral links. Don't self-refer (Amex disables referral ability if caught).",
+      "Stagger high-AF + high-benefit cards across players (avoid duplicate Plat benefits same year).",
+      "Consider very different paths: one stays under 5/24 for Chase, the other blows past for Amex/everywhere."
+    ],
+    "point_transferability": {
+      "transferable_easily": ["Chase UR", "Cap1 Venture", "Hyatt", "Hilton", "JetBlue"],
+      "transferable_with_restrictions": ["Marriott (100K/yr cap)", "Citi TYP (expire 90 days after transfer)"],
+      "not_transferable": ["Amex MR", "most airlines"]
+    }
+  },
+  "notes_for_newbies": {
+    "starter_cards": [
+      "Discover IT — best for 0 credit history (decent rewards card reliably approved)",
+      "Discover IT Student / Chase Freedom Student / Capital One Journey Student — for students"
+    ],
+    "thin_file_advice": [
+      "Need 1+ year of CC history before applying for big cards.",
+      "Often need 2-3 years before really starting to churn.",
+      "Chase typically won't approve <1 year of CC history (except Freedom Student) unless you have loan history or Chase bank account."
+    ]
+  },
+  "scope_limitations_acknowledged_by_m16p": [
+    "Opening-bonus agnostic — does not factor in current SUBs (rules change too frequently). Pair with sub-sweet-spots / elevated-offers for current SUBs.",
+    "Bank rules change over time — verify with r/churning DoC or What Card Should I Get? thread.",
+    "Subjective valuations — assumes flexible currencies (UR, MR, Bilt) tied for #1, Cap1+Citi a bit behind, Wells Autograph lower.",
+    "Assumes you can meet MSRs.",
+    "Out-of-scope: MS, MDD, credit triple-dipping, Amex NLL details, repeated Amex upgrade offers."
+  ]
+}

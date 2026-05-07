@@ -37,10 +37,21 @@ Issuer-level rules (5/24, 1/30, 8/65/95) decide whether you're approved at all. 
 - Members: Personal Plat, Schwab Plat, Morgan Stanley Plat, Goldman Plat (defunct), Business Plat
 - Rule: Each variant has its own once-per-lifetime SUB clock. Personal and Business are separate. Schwab/MS variants are separate from Personal Plat.
 - This is the legal way to get multiple Plat SUBs over a churning career.
+- ⚠️ **Fall 2023 tier-blocking:** Personal Plat permanently blocks future Personal Gold + Personal Green bonuses. Does NOT affect Business side.
+
+### Amex Personal Charge Ladder (Green/Gold/Plat) — Fall 2023 family rule
+- Holding a higher card permanently blocks lower-card SUBs on the personal side.
+  - Personal Plat blocks Personal Gold + Personal Green bonuses.
+  - Personal Gold blocks Personal Green bonus.
+- **To capture all three: get them in order Green → Gold → Platinum.** If you already hold Plat, Gold + Green bonuses are gone for life on personal.
+- Same rule applies to: personal Marriott family, personal Delta family (Blue/Gold/Plat/Reserve), Blue Cash family (BCE/BCP/Cash Magnet).
+- Business cards are NOT affected (Business Plat / Gold / Bonvoy / Delta each have separate SUB clocks unimpaired).
+- This is why m16p flowchart recommends **avoiding Amex personal cards while under 5/24** — burning a 5/24 slot for Plat now means losing 2 future SUBs.
 
 ### Amex Gold (`amex_gold`)
 - Members: Personal Gold, Business Gold, Premier Rewards Gold (legacy)
 - Rule: Personal and Business Gold are separate clocks.
+- ⚠️ Personal Gold permanently blocks future Personal Green bonus.
 
 ### Amex Bonvoy ↔ Chase Marriott (`amex_bonvoy`, `chase_marriott`)
 - Cross-issuer 24-month rule. Cannot have certain Bonvoy cards open across BOTH issuers. Wording varies per card.
@@ -64,9 +75,27 @@ For Marriott specifically:
 
 > Bonvoy Brilliant is risky given you closed Boundless on 2025-08-01 and earned its SUB 2024-04. The 24-month cross-issuer clock means SUB likely won't post until 2026-04. Confirm by reading the specific Brilliant offer T&Cs before applying.
 
-## Bilt as a special case
+## Bilt 2.0 (2026 launch — replaces single Bilt Mastercard)
 
-`data/card-families.json` flags Bilt: single product, NO traditional SUB. Rent Day double points + 1x rent are the play. Don't recommend Bilt for SUB chasing — recommend it for rent payments and as a Y1-net AF=$0 portfolio anchor.
+Bilt re-launched in 2026 as a 3-tier family issued by Column N.A.:
+- **Bilt Palladium** ($495 AF) — 50K points + Gold status + $300 Bilt Cash SUB
+- **Bilt Obsidian** ($95 AF) — $200 Bilt Cash SUB
+- **Bilt Blue** ($0 AF) — $100 Bilt Cash SUB
+
+Family SUB eligibility wording (note: per-issuer, not per-product):
+
+> "Welcome bonuses are available only to those who do not currently hold a Bilt Card 2.0 issued by Column N.A., have not previously held a Bilt Card 2.0, and have not received a Bilt Card 2.0 welcome bonus in the past."
+
+Translation: **family-wide once-per-lifetime across all three Bilt 2.0 cards.** You get ONE Bilt 2.0 SUB ever. Pick the tier that fits.
+
+The original Bilt Mastercard (issued by Wells Fargo, defunct after 2026 transition) was a separate product — having held it does NOT block Bilt 2.0 SUB eligibility (different issuer + the language explicitly says "Bilt Card 2.0 issued by Column N.A.").
+
+Also new in Bilt 2.0:
+- Housing payment is now "up to 1X" (capped, where Bilt 1.0 was uncapped 1x)
+- You can EITHER waive the rent fee and earn no points OR pay the fee with Bilt Cash and earn points
+- Housing payments treated as NPSL (no preset spending limit, pay-in-full like a charge card)
+- 4% Bilt Cash on non-housing (new currency in addition to points)
+- TPG affiliate bonus: 5x points on non-housing for first 5 days when applying through TPG link
 
 ## See also
 

@@ -1,0 +1,73 @@
+{
+  "_meta": {
+    "last_updated": "2026-05-06",
+    "staleness_days": 7,
+    "primary_sources": [
+      "https://frequentmiler.com/best-offers/",
+      "https://www.doctorofcredit.com/best-credit-card-bonuses/",
+      "https://www.uspoints.app/cardmatch",
+      "r/churning daily threads",
+      "Resy iOS app -> Offers tab"
+    ],
+    "notes": "Elevated offers expire fast. Refresh weekly. Each entry should record the channel (Resy / CardMatch / NLL email / referral / public-incognito) so the agent knows how to direct the user to it. Public-elevated offers (occasionally Chase pushes 100K SUBs publicly) go here too with channel='public_elevated'.",
+    "schema_version": 1
+  },
+  "offers": [
+    {
+      "card_id": "amex_platinum_personal",
+      "amount": 175000,
+      "currency": "Amex MR",
+      "msr": 8000,
+      "msr_months": 6,
+      "channel": "resy",
+      "channel_url_pattern": "Resy iOS app -> Offers tab; or resy.com/cards if signed in",
+      "wording_omits_lifetime_language": true,
+      "first_seen": "2026-04-20",
+      "last_seen": "2026-05-05",
+      "expires_estimated": "2026-05-31",
+      "confidence": "LIKELY",
+      "notes": "Resy targeted offers rotate. Expiration date is estimated; offer link itself shows the real expiry. The 'wording omits lifetime language' is the key flag — when true, repeat-SUB-eligible users can earn the bonus despite holding the card before."
+    },
+    {
+      "card_id": "amex_business_platinum",
+      "amount": 250000,
+      "currency": "Amex MR",
+      "msr": 20000,
+      "msr_months": 3,
+      "channel": "cardmatch",
+      "channel_url_pattern": "https://cardmatch.creditcards.com/ -> enter SSN -> check Amex tile",
+      "wording_omits_lifetime_language": false,
+      "first_seen": "2026-03-15",
+      "last_seen": "2026-05-01",
+      "confidence": "LIKELY",
+      "notes": "CardMatch shows targeted offers per user. 250K is the high end; some users see 200K, others 150K. Always check personally before recommending."
+    },
+    {
+      "card_id": "amex_gold_personal",
+      "amount": 100000,
+      "currency": "Amex MR",
+      "msr": 6000,
+      "msr_months": 6,
+      "channel": "resy",
+      "wording_omits_lifetime_language": true,
+      "first_seen": "2026-04-01",
+      "last_seen": "2026-04-28",
+      "confidence": "LIKELY",
+      "notes": "Recurring Resy offer ~quarterly. Watch for it."
+    },
+    {
+      "card_id": "chase_sapphire_preferred",
+      "amount": 100000,
+      "currency": "Chase UR",
+      "msr": 5000,
+      "msr_months": 3,
+      "channel": "public_elevated",
+      "channel_url_pattern": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred",
+      "first_seen": "2025-Q4",
+      "last_seen": "2026-Q1",
+      "expires_estimated": null,
+      "confidence": "LIKELY",
+      "notes": "Public 100K appears 1-2x per year. When live, replaces the standard 75K offer. Check the application page to verify."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "_meta": {
+    "last_updated": "2026-05-06",
+    "staleness_days": 180,
+    "primary_sources": [
+      "https://frequentmiler.com/reasonable-redemption-values/",
+      "https://www.doctorofcredit.com/most-valuable-frequent-flier-and-hotel-points/",
+      "monthly r/churning point-value polls"
+    ],
+    "notes": "Floor cpp = conservative valuation a typical user actually realizes across a year. NOT ceiling (TPG-style). Use floor for ALL Y1 net calculations. Override per-user if profile.points_valuation_overrides documents a higher consistent realization rate.",
+    "schema_version": 1
+  },
+  "transferable_currencies": {
+    "chase_ur": { "floor_cpp": 1.7, "ceiling_cpp": 2.5, "primary_partners": ["Hyatt", "United", "Air Canada Aeroplan"] },
+    "amex_mr": { "floor_cpp": 1.6, "ceiling_cpp": 2.2, "primary_partners": ["ANA", "Air Canada Aeroplan", "Virgin Atlantic", "Avianca LifeMiles"] },
+    "citi_typ": { "floor_cpp": 1.5, "ceiling_cpp": 2.0, "primary_partners": ["Turkish Miles&Smiles", "Air France/KLM Flying Blue", "Virgin Atlantic"] },
+    "capital_one_miles": { "floor_cpp": 1.5, "ceiling_cpp": 1.85, "primary_partners": ["Turkish", "Air France/KLM", "Virgin Atlantic", "British Airways"] },
+    "bilt_rewards": { "floor_cpp": 1.5, "ceiling_cpp": 2.0, "primary_partners": ["Hyatt", "American AAdvantage", "Air Canada Aeroplan", "Alaska Mileage Plan"] }
+  },
+  "airline_programs": {
+    "hyatt_world_of": { "floor_cpp": 1.7, "ceiling_cpp": 3.0 },
+    "united_mileageplus": { "floor_cpp": 1.3, "ceiling_cpp": 1.8 },
+    "american_aadvantage": { "floor_cpp": 1.4, "ceiling_cpp": 2.0 },
+    "delta_skymiles": { "floor_cpp": 1.1, "ceiling_cpp": 1.4 },
+    "alaska_mileage_plan": { "floor_cpp": 1.4, "ceiling_cpp": 2.4 },
+    "air_canada_aeroplan": { "floor_cpp": 1.4, "ceiling_cpp": 1.9 },
+    "southwest_rapid_rewards": { "floor_cpp": 1.3, "ceiling_cpp": 1.5 },
+    "british_airways_avios": { "floor_cpp": 1.3, "ceiling_cpp": 1.7 },
+    "air_france_klm_flying_blue": { "floor_cpp": 1.3, "ceiling_cpp": 1.5 },
+    "ana_mileage_club": { "floor_cpp": 1.5, "ceiling_cpp": 2.5 },
+    "singapore_krisflyer": { "floor_cpp": 1.4, "ceiling_cpp": 2.0 },
+    "virgin_atlantic_flying_club": { "floor_cpp": 1.4, "ceiling_cpp": 2.2 },
+    "turkish_miles_smiles": { "floor_cpp": 1.5, "ceiling_cpp": 2.5, "notes": "Cheapest path to AA flights via Star Alliance arbitrage" },
+    "iberia_avios": { "floor_cpp": 1.3, "ceiling_cpp": 1.7 },
+    "emirates_skywards": { "floor_cpp": 0.8, "ceiling_cpp": 1.5 }
+  },
+  "hotel_programs": {
+    "hyatt": { "floor_cpp": 1.7, "ceiling_cpp": 2.5 },
+    "marriott_bonvoy": { "floor_cpp": 0.7, "ceiling_cpp": 1.0 },
+    "hilton_honors": { "floor_cpp": 0.5, "ceiling_cpp": 0.7 },
+    "ihg_one_rewards": { "floor_cpp": 0.5, "ceiling_cpp": 0.7 },
+    "wyndham": { "floor_cpp": 0.9, "ceiling_cpp": 1.1 },
+    "choice_privileges": { "floor_cpp": 0.5, "ceiling_cpp": 0.7 }
+  },
+  "cashback_equivalents": {
+    "discover_cashback": 1.0,
+    "chase_cashback_no_ur_card": 1.0,
+    "amex_reward_dollars_no_mr_card": 1.0,
+    "citi_cashback": 1.0,
+    "boa_cashback": 1.0,
+    "boa_cashback_with_platinum_honors": 1.75
+  },
+  "notes_on_methodology": [
+    "Floor cpp assumes the user does NOT optimize every redemption — they take the easy path 60-70% of the time (portal, fixed-value, mediocre transfer).",
+    "Ceiling cpp is achievable on big international business/first class redemptions but only if user actively hunts award space. Most users don't.",
+    "TPG valuations are higher than ceiling for many programs. Don't use them.",
+    "Hilton 0.5cpp assumes typical hotel redemption; high-end aspirational redemptions hit 0.7-0.8 but are not the norm."
+  ]
+}

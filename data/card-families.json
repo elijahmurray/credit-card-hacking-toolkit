@@ -24,13 +24,32 @@
     "amex_platinum": {
       "members": ["Amex Personal Platinum", "Amex Schwab Platinum", "Amex Morgan Stanley Platinum", "Amex Goldman Platinum (defunct)", "Amex Business Platinum"],
       "rule": "Each variant has its OWN once-per-lifetime SUB clock. Personal Plat and Business Plat are separate. Schwab/MS/Goldman flavors are separate from Personal Plat.",
-      "workaround": "After earning Personal Plat SUB, you can still get Schwab Plat SUB and Business Plat SUB.",
+      "tier_blocking_2023": "Holding Personal Platinum blocks future Personal Gold AND Personal Green bonuses (Fall 2023 Amex family rule). Does NOT affect Business Plat/Gold/Green eligibility.",
+      "workaround": "After earning Personal Plat SUB, you can still get Schwab Plat SUB and Business Plat SUB. To capture Gold + Green bonuses, get them BEFORE Plat.",
       "confidence": "VERIFIED",
       "notes": "Watch for offer-language variations. Some elevated offers explicitly omit the 'related cards' language; those are the SUB-second-time opportunities."
+    },
+    "amex_personal_charge_ladder": {
+      "members": ["Amex Personal Green", "Amex Personal Gold", "Amex Personal Platinum"],
+      "rule": "Fall 2023 family tier-blocking: holding a 'higher' card permanently blocks 'lower' card SUBs. Plat blocks Gold + Green; Gold blocks Green.",
+      "workaround": "Capture in order Green -> Gold -> Plat to get all three bonuses. If you already have Plat, the Gold + Green bonuses are gone for life on personal side.",
+      "confidence": "VERIFIED",
+      "sources": ["m16p flowchart NOTES FOR AMEX CARD-FAMILY RULES"]
     },
     "amex_gold": {
       "members": ["Amex Personal Gold", "Amex Business Gold", "Amex Premier Rewards Gold (legacy)"],
       "rule": "Personal Gold and Business Gold are separate SUB clocks.",
+      "tier_blocking_2023": "Holding Personal Gold blocks future Personal Green bonus (Fall 2023). Does NOT affect Business Gold or Business Green.",
+      "confidence": "VERIFIED"
+    },
+    "amex_blue_cash": {
+      "members": ["Amex Blue Cash Everyday (BCE)", "Amex Blue Cash Preferred (BCP)", "Amex Cash Magnet"],
+      "rule": "Fall 2023 family tier-blocking applies. Holding a higher tier blocks lower-tier bonuses.",
+      "confidence": "LIKELY"
+    },
+    "amex_personal_delta": {
+      "members": ["Delta Blue", "Delta Gold", "Delta Platinum", "Delta Reserve"],
+      "rule": "Per-product once-per-lifetime PLUS Fall 2023 tier-blocking on personal Delta family. Holding Reserve blocks Plat/Gold/Blue future bonuses on personal side.",
       "confidence": "VERIFIED"
     },
     "amex_green": {
@@ -78,9 +97,24 @@
       "rule": "48-month SUB clock per product on most. Venture X has its own.",
       "confidence": "LIKELY"
     },
-    "bilt": {
-      "members": ["Bilt Mastercard"],
-      "rule": "Single product. Important context: Bilt has NO traditional SUB. Earning is via 'Rent Day' double points and 1x rent payments. The 'churn' angle is rotation rewards, not SUB.",
+    "bilt_2_0": {
+      "members": ["Bilt Palladium ($495 AF)", "Bilt Obsidian ($95 AF)", "Bilt Blue ($0 AF)"],
+      "issuer": "Column N.A. (post-2026 relaunch; replaces original Bilt Mastercard issued by Wells Fargo)",
+      "rule": "Family-wide once-per-lifetime SUB across all three Bilt 2.0 cards. Per the welcome bonus eligibility wording: 'available only to those who do not currently hold a Bilt Card 2.0 issued by Column N.A., have not previously held a Bilt Card 2.0, and have not received a Bilt Card 2.0 welcome bonus in the past.'",
+      "workaround": "Pick the right tier on first try — you only get one Bilt 2.0 SUB ever. Palladium for high spenders who want the lounge + status + biggest SUB; Obsidian for moderate spend with category multipliers; Blue for free-AF rent-payment access.",
+      "subs_at_launch": {
+        "palladium": "50,000 points + Bilt Gold Status + $300 Bilt Cash",
+        "obsidian": "$200 Bilt Cash",
+        "blue": "$100 Bilt Cash"
+      },
+      "tpg_affiliate_bonus": "5x points on non-housing for first 5 days when applying through The Points Guy affiliate link",
+      "confidence": "VERIFIED",
+      "notes": "Original Bilt Mastercard (Wells Fargo issued, pre-2026) is a SEPARATE product with a separate (and now historical) SUB clock. Having held the original Bilt does NOT block Bilt 2.0 SUB eligibility. New cards have housing as 'up to 1X' (capped), with option to either waive the housing fee (no points) or pay the fee in Bilt Cash to earn points. Housing payments treated as NPSL.",
+      "source": "Reddit /r/churning Bilt 2.0 megathread, biltrewards.com/card"
+    },
+    "bilt_1_0_legacy": {
+      "members": ["Bilt Mastercard (Wells Fargo, pre-2026 — discontinued for new applications)"],
+      "rule": "Original product. NO traditional SUB ever offered. Earning was via 'Rent Day' double points and 1x rent payments. Replaced by Bilt 2.0 family in 2026.",
       "confidence": "VERIFIED"
     }
   }

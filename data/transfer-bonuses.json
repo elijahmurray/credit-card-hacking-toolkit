@@ -1,0 +1,53 @@
+{
+  "_meta": {
+    "last_updated": "2026-05-06",
+    "staleness_days": 14,
+    "primary_sources": [
+      "https://frequentmiler.com/transfer-bonuses/",
+      "https://thepointsguy.com/?s=transfer+bonus",
+      "Each issuer's transfer page when bonuses run"
+    ],
+    "notes": "Active credit-card transfer bonuses. These run for ~2-4 weeks each. They effectively raise the floor cpp on the source currency by the bonus percentage. ALWAYS check whether transferring NOW (during a bonus) gives more value than holding (pending a bigger future bonus on the same partner).",
+    "schema_version": 1
+  },
+  "active_bonuses": [],
+  "recent_history": [
+    {
+      "from": "amex_mr",
+      "to": "Virgin Atlantic Flying Club",
+      "bonus_percent": 30,
+      "ran_from": "2026-03-01",
+      "ran_to": "2026-03-31",
+      "notes": "Recurring ~quarterly. Virgin transfers from Amex are one of the program's best uses (ANA First Class for example)."
+    },
+    {
+      "from": "amex_mr",
+      "to": "British Airways Avios",
+      "bonus_percent": 30,
+      "ran_from": "2026-02-01",
+      "ran_to": "2026-02-28",
+      "notes": "Avios + BA partner sweet spots (short-haul AA flights, JAL business class, etc.)."
+    },
+    {
+      "from": "chase_ur",
+      "to": "Air Canada Aeroplan",
+      "bonus_percent": 25,
+      "ran_from": "2025-11-01",
+      "ran_to": "2025-11-30",
+      "notes": "Aeroplan partner award sweet spots — esp. Star Alliance flights."
+    },
+    {
+      "from": "citi_typ",
+      "to": "Avianca LifeMiles",
+      "bonus_percent": 25,
+      "ran_from": "2025-12-15",
+      "ran_to": "2026-01-15",
+      "notes": "LifeMiles is a major Star Alliance award currency. Watch for recurring bonuses."
+    }
+  ],
+  "tracking_notes": [
+    "Refresh weekly when active bonuses are running",
+    "When no active bonuses, recent_history is the best signal of what's coming next (programs run bonuses on cycles)",
+    "Don't transfer points speculatively — transfer only when you have a redemption identified"
+  ]
+}

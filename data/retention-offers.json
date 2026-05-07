@@ -1,0 +1,110 @@
+{
+  "_meta": {
+    "last_updated": "2026-05-06",
+    "staleness_days": 60,
+    "primary_sources": [
+      "https://www.doctorofcredit.com/?s=retention",
+      "https://frequentmiler.com/?s=retention",
+      "r/churning retention DPs threads"
+    ],
+    "notes": "Retention offers vary by user (utilization, spend pattern, length of relationship). 'Typical' here is the median DP from the past 6 months. EV combines offer probability × offer value.",
+    "schema_version": 1
+  },
+  "by_card": {
+    "chase_sapphire_reserve": {
+      "typical_offers": [
+        { "type": "statement_credit", "amount": 300, "probability": 0.4 },
+        { "type": "spend_bonus_points", "amount": 50000, "currency": "Chase UR", "msr": 5000, "msr_months": 3, "probability": 0.2 }
+      ],
+      "no_offer_probability": 0.4,
+      "expected_value_dollars": 220,
+      "calling_window": "After AF posts on statement",
+      "phone": "1-800-432-3117",
+      "confidence": "LIKELY",
+      "notes": "DPs of $500 statement credit exist but rare (<5%). Don't promise that to user."
+    },
+    "chase_sapphire_preferred": {
+      "typical_offers": [
+        { "type": "statement_credit", "amount": 95, "probability": 0.3 },
+        { "type": "spend_bonus_points", "amount": 30000, "currency": "Chase UR", "msr": 1500, "msr_months": 3, "probability": 0.1 }
+      ],
+      "no_offer_probability": 0.6,
+      "expected_value_dollars": 55,
+      "calling_window": "After AF posts",
+      "phone": "1-800-432-3117",
+      "confidence": "LIKELY"
+    },
+    "amex_platinum_personal": {
+      "typical_offers": [
+        { "type": "spend_bonus_points", "amount": 30000, "currency": "Amex MR", "msr": 3000, "msr_months": 3, "probability": 0.5 },
+        { "type": "spend_bonus_points", "amount": 75000, "currency": "Amex MR", "msr": 4000, "msr_months": 3, "probability": 0.05 }
+      ],
+      "no_offer_probability": 0.45,
+      "expected_value_dollars": 285,
+      "calling_window": "30 days BEFORE AF posts",
+      "phone": "1-800-528-2122 (or chat in app)",
+      "confidence": "LIKELY",
+      "notes": "Amex retention rotates monthly. Best to call early in the month before AF posts. If first call yields nothing, try again 7-14 days later — different agents."
+    },
+    "amex_gold_personal": {
+      "typical_offers": [
+        { "type": "spend_bonus_points", "amount": 20000, "currency": "Amex MR", "msr": 2000, "msr_months": 3, "probability": 0.4 },
+        { "type": "spend_bonus_points", "amount": 60000, "currency": "Amex MR", "msr": 4000, "msr_months": 3, "probability": 0.05 }
+      ],
+      "no_offer_probability": 0.55,
+      "expected_value_dollars": 110,
+      "calling_window": "30 days before AF",
+      "phone": "1-800-528-2122",
+      "confidence": "LIKELY"
+    },
+    "amex_business_platinum": {
+      "typical_offers": [
+        { "type": "spend_bonus_points", "amount": 50000, "currency": "Amex MR", "msr": 5000, "msr_months": 3, "probability": 0.5 }
+      ],
+      "no_offer_probability": 0.5,
+      "expected_value_dollars": 400,
+      "calling_window": "30 days before AF",
+      "phone": "1-800-492-3344",
+      "confidence": "LIKELY"
+    },
+    "capital_one_venture_x": {
+      "typical_offers": [],
+      "no_offer_probability": 1.0,
+      "expected_value_dollars": 0,
+      "calling_window": "n/a",
+      "phone": "1-800-955-7070",
+      "confidence": "VERIFIED",
+      "notes": "Cap One does NOT offer retention on Venture X. The card's value is in credits + earning. Decision is keep based on credits alone."
+    },
+    "citi_strata_premier": {
+      "typical_offers": [
+        { "type": "statement_credit", "amount": 50, "probability": 0.3 }
+      ],
+      "no_offer_probability": 0.7,
+      "expected_value_dollars": 15,
+      "calling_window": "After AF posts",
+      "phone": "1-800-950-5114 (or chat)",
+      "confidence": "LIKELY"
+    },
+    "amex_hilton_aspire": {
+      "typical_offers": [
+        { "type": "spend_bonus_points", "amount": 50000, "currency": "Hilton Honors", "msr": 1500, "msr_months": 3, "probability": 0.4 },
+        { "type": "free_night_certificate", "amount": 1, "probability": 0.1, "notes": "Rare 'extra' free night cert offered" }
+      ],
+      "no_offer_probability": 0.5,
+      "expected_value_dollars": 100,
+      "calling_window": "30 days before AF",
+      "phone": "1-800-528-2122",
+      "confidence": "LIKELY"
+    },
+    "boa_premium_rewards_elite": {
+      "typical_offers": [],
+      "no_offer_probability": 0.95,
+      "expected_value_dollars": 0,
+      "calling_window": "n/a",
+      "phone": "1-800-732-9194",
+      "confidence": "LIKELY",
+      "notes": "BoA almost never offers retention. Decision based on Preferred Rewards multiplier value alone."
+    }
+  }
+}
