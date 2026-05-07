@@ -33,12 +33,20 @@ export default async function ProfilePage() {
         <h1 className="text-2xl font-semibold tracking-tight text-zinc-900">
           Your profile
         </h1>
-        <Link
-          href="/chat"
-          className="text-sm font-medium text-zinc-600 hover:text-zinc-900"
-        >
-          Back to chat →
-        </Link>
+        <div className="flex items-center gap-4">
+          <Link
+            href="/onboarding?force=true"
+            className="text-sm font-medium text-zinc-600 hover:text-zinc-900"
+          >
+            Redo my profile
+          </Link>
+          <Link
+            href="/chat"
+            className="text-sm font-medium text-zinc-600 hover:text-zinc-900"
+          >
+            Back to chat →
+          </Link>
+        </div>
       </div>
 
       {isEmpty ? (
@@ -47,15 +55,14 @@ export default async function ProfilePage() {
             You haven&apos;t built your profile yet.
           </p>
           <p className="mt-2 text-xs text-zinc-500">
-            Build your profile by chatting with the agent — ask it to{" "}
-            <span className="font-mono">/credit-card-hacker:getting-started</span>{" "}
-            and walk through the questions.
+            Walk through the onboarding flow — about 5 minutes of short
+            questions covering your card history, 5/24 status, and goals.
           </p>
           <Link
-            href="/chat"
+            href="/onboarding"
             className="mt-6 inline-flex items-center rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-white hover:bg-zinc-800"
           >
-            Start chat
+            Start onboarding
           </Link>
         </div>
       ) : (
