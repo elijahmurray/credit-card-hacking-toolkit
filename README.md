@@ -1,10 +1,33 @@
 # credit-card-hacking-toolkit
 
-AI-powered credit card churning. A Claude Code plugin that picks your next card, hits min spend, decides when to cancel/downgrade/keep, hunts elevated and NLL offers, plans bank-bonus runs, and avoids shutdowns — all backed by structured reference data.
+AI-powered credit card churning. Two artifacts in one repo:
+
+- **The Claude Code plugin** (this directory) — skills + reference data for power users running it inside Claude Code
+- **The web app** (in [`web/`](./web/)) — Next.js + Supabase + Stripe SaaS wrapping the same logic for non-CLI users
+
+Both share the same source of truth: `CLAUDE.md` (agent prompt), `data/*.json` (reference), and `plugins/credit-card-hacker/skills/*/SKILL.md` (skill bodies). The web app loads them at request time; the plugin loads them via Claude Code's skill mechanism.
 
 Sister project to [borski/travel-hacking-toolkit](https://github.com/borski/travel-hacking-toolkit). This is the **earn side**; that one is the **burn side**.
 
 > "What card should I get next?" → opinionated recommendation in <60 seconds, with the Y1 net math, the gate check, and the application link.
+
+---
+
+## Repo layout
+
+```
+.
+├── README.md                   # this file (overview + quickstart for both)
+├── .claude-plugin/             # Claude Code plugin manifest (loaded by CLI)
+├── CLAUDE.md                   # agent system prompt (source of truth)
+├── AGENTS.md                   # symlink to CLAUDE.md
+├── agents/credit-card-hacker.md  # plugin agent file (kept in sync via hook)
+├── data/                       # reference JSON (cards, rules, offers, valuations)
+├── plugins/credit-card-hacker/skills/   # skill markdown files
+├── skills/                     # symlink → plugins/credit-card-hacker/skills
+├── scripts/                    # smoke-test, sync, refresh stubs
+└── web/                        # Next.js SaaS — see web/README.md
+```
 
 ---
 
