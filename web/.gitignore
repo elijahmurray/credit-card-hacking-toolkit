@@ -34,3 +34,4 @@ coverage/
 
 # Generated
 lib/supabase/database.types.ts
+.skills/

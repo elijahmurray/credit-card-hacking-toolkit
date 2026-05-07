@@ -36,14 +36,20 @@ export const TIERS: Record<TierId, Tier> = {
   free: {
     id: "free",
     name: "Free",
-    priceMonthly: 0,
-    premiumDailyQuota: 10,
+    // NOTE on quota choice (re-evaluated after measurement, 2026-05-06):
+    // Static system prompt = ~37K tokens (CLAUDE.md + all 28 skill bodies).
+    // With Anthropic 5-min ephemeral cache: ~$0.02/warm-msg, ~$0.15/cold-msg.
+    // 5 Sonnet/day worst-case = ~$0.75/free-user/day = $22.50/mo subsidy.
+    // Pro at $15 funds ~0.7 free users — needs 5%+ AI-vertical conversion to be sustainable.
+    // TODO (v2): build skill router so cold-message cost drops to ~$0.03 — then we can
+    //   raise free Sonnet quota back to 10/day. See lib/ai/skill-loader.ts comment.
+    premiumDailyQuota: 5,
     totalDailyCap: 0, // unlimited Haiku after Sonnet quota exhausted
     monthlyCap: 0,
     premiumModel: "claude-sonnet-4-6",
     fallbackModel: "claude-haiku-4-5-20251001",
     features: [
-      "10 Sonnet messages per day, then unlimited Haiku",
+      "5 Sonnet messages per day, then unlimited Haiku",
       "Profile builder + card history",
       "Next-card recommendations",
       "Min-spend planning",

@@ -2,12 +2,17 @@ import { promises as fs } from "node:fs";
 import path from "node:path";
 
 /**
- * Loads CLAUDE.md and all SKILL.md files from the plugin directory at module
- * init time, then memoizes the result. Server-only — depends on fs access.
+ * Loads CLAUDE.md and all SKILL.md files from web/.skills/ at module init time,
+ * then memoizes the result. Server-only — depends on fs access.
  *
- * Path assumption: process.cwd() is the `web/` directory in dev and on Vercel
- * (Vercel projects with rootDirectory=web treat web/ as the project root).
- * That means the plugin files live one directory up.
+ * The .skills/ directory is populated by scripts/copy-skills.mjs at prebuild
+ * (and predev) time. It mirrors the source-of-truth files at the repo root:
+ *   .skills/CLAUDE.md
+ *   .skills/skills/<skill-name>/SKILL.md
+ *   .skills/data/*.json
+ *
+ * We don't read directly from `../CLAUDE.md` because Next.js 16 / Turbopack
+ * won't trace files outside the project root for serverless function bundling.
  */
 
 export interface LoadedSkill {
@@ -21,14 +26,9 @@ export interface LoadedSkills {
   skills: LoadedSkill[];
 }
 
-const REPO_ROOT = path.join(process.cwd(), "..");
-const CLAUDE_MD_PATH = path.join(REPO_ROOT, "CLAUDE.md");
-const SKILLS_DIR = path.join(
-  REPO_ROOT,
-  "plugins",
-  "credit-card-hacker",
-  "skills",
-);
+const SKILLS_ROOT = path.join(process.cwd(), ".skills");
+const CLAUDE_MD_PATH = path.join(SKILLS_ROOT, "CLAUDE.md");
+const SKILLS_DIR = path.join(SKILLS_ROOT, "skills");
 
 let cache: Promise<LoadedSkills> | null = null;
 

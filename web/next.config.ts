@@ -4,10 +4,12 @@ const config: NextConfig = {
   experimental: {
     // Enable PPR / streaming once stable for our use case
   },
-  // We load skill markdown from the parent plugin/ dir at build time.
-  // See lib/ai/load-skills.ts for the loader.
+  // Skill assets are copied into web/.skills/ at build time by
+  // scripts/copy-skills.mjs (run via the prebuild hook in package.json).
+  // The skill loader reads from there. Keeping everything inside the
+  // project root means Turbopack can trace it.
   outputFileTracingIncludes: {
-    "/api/chat": ["../data/**/*", "../plugins/credit-card-hacker/skills/**/*", "../CLAUDE.md"],
+    "/api/chat": [".skills/**/*"],
   },
 };
 
