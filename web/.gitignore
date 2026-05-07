@@ -1,0 +1,36 @@
+# Next.js
+.next/
+out/
+build/
+
+# Node
+node_modules/
+.pnp
+.pnp.js
+
+# Env (gitignored — never commit)
+.env
+.env*.local
+
+# Vercel
+.vercel/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Supabase
+.supabase/
+supabase/.branches/
+supabase/.temp/
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Testing
+coverage/
+
+# Generated
+lib/supabase/database.types.ts
