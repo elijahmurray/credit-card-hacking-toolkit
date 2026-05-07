@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "elijahmurray",
+  "description": "Credit card churning toolkit. Companion to travel-hacking-toolkit — the earn side, not the burn side.",
+  "owner": {
+    "name": "Elijah Murray"
+  },
+  "plugins": [
+    {
+      "name": "credit-card-hacker",
+      "source": "./",
+      "description": "AI-powered credit card churning. Skills + reference data for picking your next card, hitting min spend, deciding when to cancel/downgrade/keep, hunting elevated and NLL offers, planning bank-bonus runs, and avoiding shutdowns.",
+      "author": { "name": "Elijah Murray" },
+      "license": "MIT",
+      "keywords": ["credit-cards", "churning", "points", "miles", "rewards", "signup-bonus"],
+      "category": "productivity"
+    }
+  ]
+}

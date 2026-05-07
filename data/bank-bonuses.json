@@ -1,0 +1,106 @@
+{
+  "_meta": {
+    "last_updated": "2026-05-06",
+    "staleness_days": 14,
+    "primary_sources": [
+      "https://www.doctorofcredit.com/best-bank-account-bonuses/",
+      "https://www.bankrewards.io/"
+    ],
+    "notes": "Bank bonuses are pure cash plays with their own rules: ChexSystems sensitivity, prior-bonus lockouts, 1099-INT for ≥$10. Fewer 5/24 implications since most use soft pulls — but Chase Business Checking is a hard pull and counts."
+  },
+  "active_bonuses": [
+    {
+      "id": "chase_total_checking_300",
+      "bank": "Chase",
+      "product": "Total Checking",
+      "bonus": 300,
+      "msr_or_dd": "Direct deposit of $500+ within 90 days",
+      "lockout": "Not received Chase personal checking bonus in past 2 years AND no Chase personal checking open within 90 days",
+      "credit_pull": "soft (most cases)",
+      "1099_int": true,
+      "estimated_hours": 1.5,
+      "roi_per_hour": 200,
+      "confidence": "VERIFIED"
+    },
+    {
+      "id": "chase_business_complete_500",
+      "bank": "Chase",
+      "product": "Business Complete Checking",
+      "bonus": 500,
+      "msr_or_dd": "Maintain $2K balance for 30 days + 5 transactions",
+      "lockout": "Not received bonus in past 2 years",
+      "credit_pull": "hard (counts toward 5/24 inquiries)",
+      "1099_int": true,
+      "estimated_hours": 1,
+      "roi_per_hour": 500,
+      "confidence": "VERIFIED",
+      "notes": "Often $750 or higher with elevated offers. Hard pull is the cost; SP version sometimes available via banker."
+    },
+    {
+      "id": "citi_priority_2000",
+      "bank": "Citi",
+      "product": "Citi Priority Checking",
+      "bonus": 2000,
+      "msr_or_dd": "Deposit $250K new money, hold 60 days",
+      "lockout": "Not opened Citi personal deposit in past 180 days",
+      "credit_pull": "soft",
+      "1099_int": true,
+      "estimated_hours": 2,
+      "roi_per_hour": 1000,
+      "confidence": "VERIFIED",
+      "notes": "Tiered up to $5K bonus for $3M new money. ROI/hour is excellent if you have parkable cash."
+    },
+    {
+      "id": "boa_premium_300",
+      "bank": "Bank of America",
+      "product": "Advantage Banking",
+      "bonus": 300,
+      "msr_or_dd": "Two qualifying DDs of $250+ within 90 days",
+      "lockout": "Not had BoA personal checking in past 12 months",
+      "credit_pull": "soft",
+      "1099_int": true,
+      "estimated_hours": 1,
+      "roi_per_hour": 300,
+      "confidence": "LIKELY"
+    },
+    {
+      "id": "us_bank_smartly_savings_400",
+      "bank": "US Bank",
+      "product": "Smartly Savings",
+      "bonus": 450,
+      "msr_or_dd": "Deposit + maintain $25K for 60 days",
+      "credit_pull": "soft",
+      "1099_int": true,
+      "confidence": "LIKELY"
+    },
+    {
+      "id": "fidelity_cash_management_100",
+      "bank": "Fidelity",
+      "product": "Cash Management Account",
+      "bonus": 100,
+      "msr_or_dd": "Deposit $50",
+      "lockout": "Once per customer",
+      "credit_pull": "soft",
+      "1099_int": false,
+      "estimated_hours": 0.25,
+      "roi_per_hour": 400,
+      "confidence": "VERIFIED",
+      "notes": "Lowest-effort bank bonus available. Frequently elevated to $200+."
+    }
+  ],
+  "what_counts_as_dd": {
+    "definitely_works": ["Real W2 payroll", "1099 from broker (interest, dividends in some cases)", "SSA / pension"],
+    "depends_on_bank": [
+      "ACH push from external bank (Chase: NO, Citi: YES, BoA: depends, Fidelity: YES)",
+      "Wire transfer (rarely counts)",
+      "Zelle (almost never counts as of 2024-2026 — banks tightened)"
+    ],
+    "almost_never_works": ["Internal transfers", "Cash deposit"]
+  },
+  "1099_int_rules": {
+    "threshold": 10,
+    "rule": "Banks file 1099-INT for any account paying ≥$10 in interest OR bonus during a tax year. Bonuses count as taxable income.",
+    "applies_to_state": "Yes — varies by state. Some states (CA, OR) treat as interest income; others as misc income.",
+    "notes": "Always factor effective tax rate into bonus value. A $500 bonus at 32% federal + 9% state = $295 net. Doesn't mean don't chase — just means real ROI is ~60% of headline for high earners."
+  }
+}

@@ -1,0 +1,24 @@
+# User profile is private — never commit
+profile.json
+.profile/
+
+# Local env
+.env
+.env.local
+
+# OS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
+node_modules/

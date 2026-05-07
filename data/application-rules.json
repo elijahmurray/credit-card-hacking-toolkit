@@ -1,0 +1,195 @@
+{
+  "_meta": {
+    "last_updated": "2026-05-06",
+    "staleness_days": 90,
+    "primary_sources": [
+      "https://frequentmiler.com/complete-guide-to-credit-card-application-rules-by-bank/",
+      "https://upgradedpoints.com/credit-cards/applying-for-credit-cards-bank-rules/",
+      "https://awardwallet.com/credit-cards/rewards-card-application-rules/",
+      "https://524tracker.com/"
+    ],
+    "notes": "Application rules are the gates that decide whether you can even get a SUB. Wrong here = recommending an app the user is locked out of. Always cross-check at least two primary sources before updating."
+  },
+  "issuers": {
+    "chase": {
+      "5_24": {
+        "rule": "If you have opened 5+ personal credit cards across ALL issuers in the past 24 months, Chase will deny most applications.",
+        "applies_to": "All Chase consumer cards. Chase business cards do NOT count toward 5/24, but Chase will still check 5/24 when approving them.",
+        "what_counts": [
+          "Personal credit cards from any issuer that report to consumer bureaus (Chase, Amex personal, Citi personal, BoA personal, Cap One personal AND business, Discover personal AND business, Wells, US Bank, Barclays, etc.)",
+          "Authorized user cards usually count (some DPs say not; safer to assume they do)"
+        ],
+        "what_does_not_count": [
+          "Business cards from Amex, Chase, Citi, BoA, US Bank — they don't report to personal bureaus",
+          "Most non-bank cards (store cards from Synchrony usually don't count, but some do; check individual card)"
+        ],
+        "confidence": "VERIFIED",
+        "sources": ["https://524tracker.com/", "https://frequentmiler.com/complete-guide-to-credit-card-application-rules-by-bank/"]
+      },
+      "1_30": {
+        "rule": "Chase typically denies if you've opened any Chase card in the past 30 days, sometimes 90.",
+        "confidence": "LIKELY",
+        "notes": "Soft rule, varies by product and recon."
+      },
+      "2_30_business": {
+        "rule": "Chase business cards: max 1 every 30 days as a hard pattern.",
+        "confidence": "LIKELY"
+      },
+      "sapphire_family_48mo": {
+        "rule": "Cannot earn the SUB on any Chase Sapphire-branded card if you currently hold ANY Sapphire card or have received a Sapphire SUB in the past 48 months.",
+        "applies_to": ["Chase Sapphire Preferred (CSP)", "Chase Sapphire Reserve (CSR)", "Chase Sapphire (no longer issued, legacy)"],
+        "confidence": "VERIFIED",
+        "notes": "The 48-month clock starts from the date you EARNED the prior SUB, not when you opened the card. Best practice: product-change OUT of Sapphire before reapplying."
+      },
+      "ink_family": {
+        "rule": "Chase Ink cards do NOT have a family-wide once-per-N-months SUB rule (as of 2026). You can hold multiple Ink cards and earn separate SUBs on each, subject to the per-product 24-month rule and 1/30 spacing.",
+        "confidence": "LIKELY",
+        "notes": "Ink Business Preferred / Ink Business Cash / Ink Business Unlimited each have their own 24-month SUB clock per product. Verify wording at application."
+      },
+      "ihg_marriott_united_southwest": {
+        "rule": "Chase co-brand cards: 24-month SUB rule per product. Marriott has additional cross-issuer lockouts with Amex Bonvoy.",
+        "confidence": "VERIFIED"
+      }
+    },
+    "amex": {
+      "once_per_lifetime": {
+        "rule": "American Express SUBs are once-per-lifetime PER PRODUCT for most cards. The exact wording in the offer terms determines eligibility.",
+        "wording_variants": [
+          "Welcome offer not available to applicants who have or have had this Card or the [related card].",
+          "We may also consider the number of Cards you have opened and closed.",
+          "Welcome offer not available to applicants who have had this Card."
+        ],
+        "key_fact": "Wording is per OFFER, not per card. Some elevated offers (Resy, NLL) explicitly omit the 'have had this Card' language — those are the unicorn second-bonus opportunities.",
+        "confidence": "VERIFIED",
+        "sources": ["https://frequentmiler.com/complete-guide-to-credit-card-application-rules-by-bank/"]
+      },
+      "1_5_day_velocity": {
+        "rule": "Max 1 Amex credit card application per 5 days (often quoted as 1/5).",
+        "confidence": "VERIFIED"
+      },
+      "2_90_day": {
+        "rule": "Max 2 Amex credit cards approved in 90 days (sometimes 1 in 90, varies by DP).",
+        "confidence": "LIKELY"
+      },
+      "5_card_limit": {
+        "rule": "Maximum 5 Amex credit cards (consumer + business co-branded count) held simultaneously. Charge cards (Plat, Gold, Green) do not count toward the 5-card limit.",
+        "confidence": "VERIFIED",
+        "notes": "Co-brand cards (Hilton, Delta, Marriott Bonvoy Brilliant, Cash Magnet, EveryDay, BCE, BCP, BCP) count. Plat, Gold, Green, Business Plat, Business Gold do NOT count."
+      },
+      "10_charge_card_limit": {
+        "rule": "Maximum 10 Amex charge cards held simultaneously.",
+        "confidence": "LIKELY"
+      },
+      "popup": {
+        "rule": "When applying for an Amex card, an in-flow popup may appear saying you are not eligible for the welcome bonus. The popup is not always tied to the once-per-lifetime rule — it can be triggered by velocity, prior closed accounts, or relationship history.",
+        "confidence": "VERIFIED",
+        "notes": "Popup can be partially mitigated via incognito browsing, applying through Resy (resy.com link with embedded offer), CardMatch targeted offers, or referral links from other users.",
+        "see_also": "pop-up-jail-amex skill"
+      }
+    },
+    "citi": {
+      "8_65_95": {
+        "rule": "Citi will approve max 1 personal card every 8 days, 2 personal cards within 65 days. Business cards: max 1 every 95 days.",
+        "confidence": "VERIFIED",
+        "sources": ["https://upgradedpoints.com/credit-cards/applying-for-credit-cards-bank-rules/"]
+      },
+      "48_month_sub": {
+        "rule": "Citi: cannot earn SUB if you have received a SUB on the same card OR closed the same card within the past 48 months. Per-product (with caveats — Strata family has tighter rules).",
+        "confidence": "VERIFIED",
+        "notes": "The 48-month wording is in the offer terms. Always read the specific offer to confirm."
+      },
+      "strata_family": {
+        "rule": "Citi Strata family includes Strata Premier and Strata Elite. The 48-month rule applies across the family for some offers.",
+        "confidence": "LIKELY",
+        "notes": "Read offer terms carefully; family-level lockout language has appeared on Strata Elite offers."
+      },
+      "rapid_application_shutdown": {
+        "rule": "Applying for too many Citi cards in rapid succession (3+ in a few weeks) can trigger account closure including existing Citi cards.",
+        "confidence": "LIKELY",
+        "see_also": "shutdown-risk skill"
+      }
+    },
+    "bank_of_america": {
+      "2_3_4": {
+        "rule": "BoA limits: max 2 cards in 30 days, 3 cards in 12 months, 4 cards in 24 months. Counts BoA cards only.",
+        "confidence": "VERIFIED",
+        "sources": ["https://frequentmiler.com/complete-guide-to-credit-card-application-rules-by-bank/"]
+      },
+      "7_12_rule": {
+        "rule": "BoA also has a separate rule limiting consumer card approvals to 7 in 12 months and 7 in 24 months across ALL issuers (similar to 5/24 but at BoA).",
+        "confidence": "LIKELY"
+      },
+      "preferred_rewards": {
+        "rule": "Holding $20K+ in BoA/Merrill assets unlocks Preferred Rewards Platinum Honors tier, multiplying card rewards 75% (e.g., 2.625% on Premium Rewards or 5.25% on Customized Cash).",
+        "confidence": "VERIFIED",
+        "notes": "This is the entire reason BoA cards are interesting. Without Preferred Rewards, they are mediocre."
+      }
+    },
+    "us_bank": {
+      "2_12": {
+        "rule": "Max 2 US Bank credit cards approved in 12 months.",
+        "confidence": "LIKELY",
+        "notes": "DP-based; not officially published. Some users report tighter rules."
+      },
+      "altitude_reserve_eol": {
+        "rule": "Altitude Reserve was the standout US Bank card; product was discontinued in 2024. New US Bank Smartly card replaces some functionality (4% with deposit relationship).",
+        "confidence": "VERIFIED"
+      }
+    },
+    "capital_one": {
+      "1_per_6_months": {
+        "rule": "Max 1 Capital One personal card every 6 months (DP-based).",
+        "confidence": "LIKELY"
+      },
+      "2_card_limit": {
+        "rule": "Most users limited to 2 Capital One credit cards total (not counting Spark business). Some DPs report being denied past 2.",
+        "confidence": "LIKELY"
+      },
+      "auto_decline": {
+        "rule": "Capital One auto-declines based on income-to-debt ratio and credit history. Recon is rare.",
+        "confidence": "LIKELY"
+      },
+      "business_reports_personal": {
+        "rule": "Capital One business cards (Spark) DO report to personal credit bureaus. They count toward Chase 5/24 and your personal AAoA.",
+        "confidence": "VERIFIED"
+      }
+    },
+    "barclays": {
+      "6_24": {
+        "rule": "Barclays informally limits to 6 cards in 24 months across all issuers (similar to 5/24).",
+        "confidence": "LIKELY"
+      },
+      "double_dip_no": {
+        "rule": "Cannot apply for two Barclays cards same day; second is denied.",
+        "confidence": "LIKELY"
+      }
+    },
+    "wells_fargo": {
+      "6_month_velocity": {
+        "rule": "Max 1 Wells Fargo card per 6 months (DP-based).",
+        "confidence": "LIKELY"
+      },
+      "biz_reports_personal_no": {
+        "rule": "Wells business cards do NOT report to personal credit (do not count toward 5/24).",
+        "confidence": "LIKELY"
+      }
+    },
+    "discover": {
+      "biz_reports_personal_yes": {
+        "rule": "Discover business cards report to personal credit (count toward 5/24).",
+        "confidence": "VERIFIED"
+      },
+      "double_cashback_first_year": {
+        "rule": "Discover IT first year cashback match is the de facto SUB. Effectively doubles all cashback earned in year 1, including category bonuses.",
+        "confidence": "VERIFIED"
+      }
+    }
+  },
+  "cross_issuer_rules": {
+    "chase_amex_marriott_24mo": {
+      "rule": "Cannot earn SUB on Marriott Bonvoy cards (any Chase or Amex) if you have received a SUB on any Bonvoy card in the past 24 months OR currently hold certain Bonvoy cards across the issuers.",
+      "confidence": "VERIFIED",
+      "notes": "Specifically: cannot have certain Bonvoy cards open across BOTH Chase and Amex. Wording varies by card. Marriott family is the most complex cross-issuer rule in the game."
+    }
+  }
+}

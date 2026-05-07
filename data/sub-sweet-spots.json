@@ -1,0 +1,109 @@
+{
+  "_meta": {
+    "last_updated": "2026-05-06",
+    "staleness_days": 14,
+    "primary_sources": [
+      "https://www.doctorofcredit.com/best-credit-card-bonuses/",
+      "https://frequentmiler.com/best-offers/"
+    ],
+    "notes": "SUBs ranked by current value at floor cpp, adjusted for MSR achievability and AF. Tier definitions: legendary = >$1500 first-year net; excellent = $750-1500; good = $300-750. Verify current offer at application before recommending."
+  },
+  "tiers": {
+    "legendary": [
+      {
+        "card": "amex_business_platinum",
+        "current_offer": "150K MR public / 250K MR via Resy/CardMatch",
+        "msr": "$20K in 3 months",
+        "y1_net_at_floor": "≈$2400 public / ≈$4000 elevated (after AF + realized credits)",
+        "caveats": ["High MSR requires real business spend or organic large purchases", "Once-per-lifetime per offer language", "Popup risk for Amex-heavy users"],
+        "confidence": "VERIFIED"
+      },
+      {
+        "card": "amex_platinum_personal",
+        "current_offer": "175K-200K MR via Resy / CardMatch",
+        "msr": "$8K in 6 months",
+        "y1_net_at_floor": "≈$2200 with realized credits",
+        "caveats": ["Public is only 80K; the 175K+ requires elevated channel", "Once-per-lifetime"],
+        "confidence": "VERIFIED"
+      },
+      {
+        "card": "chase_ink_business_preferred",
+        "current_offer": "90K UR public",
+        "msr": "$8K in 3 months",
+        "y1_net_at_floor": "≈$1530 first year (90K x 1.7cpp) - $95 AF",
+        "caveats": ["Need legitimate business activity to apply (sole prop OK)"],
+        "confidence": "VERIFIED",
+        "notes": "Often considered the highest-floor SUB in churning because Chase UR is easy to use and IBP has no popup mechanic."
+      }
+    ],
+    "excellent": [
+      {
+        "card": "amex_business_gold",
+        "current_offer": "100K MR + retention spend bonuses",
+        "msr": "$15K in 3 months",
+        "y1_net_at_floor": "≈$1300 public",
+        "confidence": "VERIFIED"
+      },
+      {
+        "card": "chase_sapphire_preferred",
+        "current_offer": "75K UR public, occasionally 100K",
+        "msr": "$5K in 3 months",
+        "y1_net_at_floor": "≈$1180 (75K x 1.7) - $95 AF",
+        "caveats": ["48-month family lockout", "Must NOT hold any Sapphire when applying"],
+        "confidence": "VERIFIED"
+      },
+      {
+        "card": "chase_sapphire_reserve",
+        "current_offer": "100K UR public",
+        "msr": "$5K in 3 months",
+        "y1_net_at_floor": "Strongly depends on credit utilization. With Apple/Lyft/OpenTable used: ≈$1100. Without: net negative.",
+        "caveats": ["AF $795 is steep", "Credit value highly user-dependent"],
+        "confidence": "VERIFIED"
+      },
+      {
+        "card": "capital_one_venture_x",
+        "current_offer": "75K Cap One miles",
+        "msr": "$4K in 3 months",
+        "y1_net_at_floor": "≈$1180 (75K x 1.5) + $300 travel + $150 anniversary - $395 AF = ≈$1185",
+        "caveats": ["Cap One typically 1-2 cards lifetime"],
+        "confidence": "VERIFIED",
+        "notes": "Effective AF is negative once credits used. Often a permanent keeper after SUB."
+      },
+      {
+        "card": "citi_strata_premier",
+        "current_offer": "75K TYP",
+        "msr": "$4K in 3 months",
+        "y1_net_at_floor": "≈$1030 (75K x 1.5) - $95 AF",
+        "confidence": "VERIFIED"
+      }
+    ],
+    "good": [
+      {
+        "card": "chase_ink_business_unlimited",
+        "current_offer": "$750 cashback (or 75K UR if paired)",
+        "msr": "$6K in 3 months",
+        "y1_net_at_floor": "$750 + earning, no AF",
+        "confidence": "VERIFIED"
+      },
+      {
+        "card": "chase_ink_business_cash",
+        "current_offer": "$350 + $350 tiered",
+        "msr": "$3K + $3K in 3 months",
+        "y1_net_at_floor": "$700",
+        "confidence": "VERIFIED"
+      },
+      {
+        "card": "amex_gold_personal",
+        "current_offer": "60K MR",
+        "msr": "$6K in 6 months",
+        "y1_net_at_floor": "≈$960 (60K x 1.6) - $325 AF + ≈$300 realized credits = $935",
+        "confidence": "VERIFIED"
+      }
+    ]
+  },
+  "historical_legendary_now_devalued": [
+    { "card": "Amex Personal Platinum 150K", "as_of": "common 2018-2022", "now": "Public 80K, elevated 175K-200K via Resy" },
+    { "card": "Chase Sapphire Preferred 100K + bonus", "as_of": "Q4 2024", "now": "75K standard" },
+    { "card": "Citi Premier (now Strata) 100K", "as_of": "2022", "now": "75K Strata Premier" }
+  ]
+}

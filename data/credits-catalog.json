@@ -1,0 +1,174 @@
+{
+  "_meta": {
+    "last_updated": "2026-05-06",
+    "staleness_days": 90,
+    "notes": "Realized credit values, NOT headline values. Friction rating predicts how much of the credit a typical user will actually capture. The default expected_realized field is a fraction (0.0-1.0) of headline value. Override per-user in profile.json -> credit_realization_overrides for cards held."
+  },
+  "credits": [
+    {
+      "card_id": "amex_platinum_personal",
+      "name": "Airline incidental",
+      "headline": 200,
+      "friction": "high",
+      "expected_realized": 0.3,
+      "notes": "Once a guaranteed gift card hack. Now Amex aggressively rejects all but pure fees (baggage, seat assignments). Most users let it expire."
+    },
+    {
+      "card_id": "amex_platinum_personal",
+      "name": "Uber Cash",
+      "headline": 200,
+      "friction": "low",
+      "expected_realized": 0.85,
+      "notes": "Auto-loads monthly into Uber. December $20 instead of $15. Easy to use if you take Uber or order Uber Eats."
+    },
+    {
+      "card_id": "amex_platinum_personal",
+      "name": "Saks Fifth Avenue",
+      "headline": 100,
+      "friction": "medium",
+      "expected_realized": 0.6,
+      "notes": "$50 semi-annual. Use it for socks, candles, or small gifts. Many users forget the second half."
+    },
+    {
+      "card_id": "amex_platinum_personal",
+      "name": "Equinox",
+      "headline": 300,
+      "friction": "very_high",
+      "expected_realized": 0.05,
+      "notes": "Useless unless you would have paid for Equinox anyway ($300/mo). For non-members, near-zero realization."
+    },
+    {
+      "card_id": "amex_platinum_personal",
+      "name": "Walmart+",
+      "headline": 155,
+      "friction": "low",
+      "expected_realized": 0.7,
+      "notes": "Auto-credits if you sign up. Walmart+ also includes Paramount+ Essential, free shipping, and Sam's Club fuel discounts. Real value if you use any of those."
+    },
+    {
+      "card_id": "amex_platinum_personal",
+      "name": "Clear Plus",
+      "headline": 199,
+      "friction": "low",
+      "expected_realized": 0.6,
+      "notes": "Useful only if you fly through airports with Clear lanes."
+    },
+    {
+      "card_id": "amex_platinum_personal",
+      "name": "Hotel credit (FHR/THC prepaid)",
+      "headline": 200,
+      "friction": "medium",
+      "expected_realized": 0.7,
+      "notes": "Requires booking at least 2 nights at FHR or THC properties via Amex Travel. If you'd stay at one of those properties anyway, easy."
+    },
+    {
+      "card_id": "amex_platinum_personal",
+      "name": "Streaming",
+      "headline": 240,
+      "friction": "medium",
+      "expected_realized": 0.65,
+      "notes": "$20/month at Disney Bundle, ESPN+, Hulu, Peacock, NYT, WSJ. Easy if you subscribe to any. Often 60-80% realized."
+    },
+    {
+      "card_id": "amex_platinum_personal",
+      "name": "Dell tech",
+      "headline": 200,
+      "friction": "medium",
+      "expected_realized": 0.45,
+      "notes": "$100 semi-annual. Dell pricing often inflates around credit timing. Resale market exists but is not free money."
+    },
+    {
+      "card_id": "amex_platinum_personal",
+      "name": "Global Entry / TSA Pre",
+      "headline": 120,
+      "friction": "low",
+      "expected_realized": 0.25,
+      "notes": "$120 every 4 years means $30/yr expected, hence low effective annual value. Don't double-count if you have multiple cards offering this."
+    },
+    {
+      "card_id": "chase_sapphire_reserve",
+      "name": "Annual travel credit",
+      "headline": 300,
+      "friction": "low",
+      "expected_realized": 0.95,
+      "notes": "Auto-applies to first $300 in travel. Almost everyone realizes full value."
+    },
+    {
+      "card_id": "chase_sapphire_reserve",
+      "name": "DoorDash DashPass",
+      "headline": 120,
+      "friction": "medium",
+      "expected_realized": 0.4,
+      "notes": "Includes membership + monthly credits. Real value only if you'd otherwise pay for DoorDash. Counts as ad-hoc value."
+    },
+    {
+      "card_id": "chase_sapphire_reserve",
+      "name": "Lyft credit",
+      "headline": 120,
+      "friction": "low",
+      "expected_realized": 0.7,
+      "notes": "$10/month auto-credit on Lyft rides. Use it or lose it monthly."
+    },
+    {
+      "card_id": "chase_sapphire_reserve",
+      "name": "Apple TV+ / Music",
+      "headline": 250,
+      "friction": "low",
+      "expected_realized": 0.6,
+      "notes": "Auto-credits if you subscribe. If you would not subscribe, near-zero."
+    },
+    {
+      "card_id": "chase_sapphire_reserve",
+      "name": "Sapphire Reserve dining (OpenTable Premier)",
+      "headline": 300,
+      "friction": "high",
+      "expected_realized": 0.25,
+      "notes": "Geographically limited curated restaurant list. Realization low for most users; high for SF/NYC/LA OpenTable regulars."
+    },
+    {
+      "card_id": "amex_gold_personal",
+      "name": "Uber Cash",
+      "headline": 120,
+      "friction": "low",
+      "expected_realized": 0.85
+    },
+    {
+      "card_id": "amex_gold_personal",
+      "name": "GrubHub/Goldbelly/etc dining",
+      "headline": 120,
+      "friction": "medium",
+      "expected_realized": 0.7
+    },
+    {
+      "card_id": "amex_gold_personal",
+      "name": "Resy credit",
+      "headline": 100,
+      "friction": "medium",
+      "expected_realized": 0.6,
+      "notes": "$50 semi-annual at Resy restaurants. Easy in major cities."
+    },
+    {
+      "card_id": "amex_gold_personal",
+      "name": "Dunkin",
+      "headline": 84,
+      "friction": "medium",
+      "expected_realized": 0.5
+    },
+    {
+      "card_id": "capital_one_venture_x",
+      "name": "Travel credit",
+      "headline": 300,
+      "friction": "low",
+      "expected_realized": 0.9,
+      "notes": "Use via Cap One Travel portal. Most users hit it once on a hotel or flight."
+    },
+    {
+      "card_id": "capital_one_venture_x",
+      "name": "Anniversary points",
+      "headline": 150,
+      "friction": "low",
+      "expected_realized": 1.0,
+      "notes": "10K Cap One miles auto-credited each anniversary. 1.5cpp = $150 value."
+    }
+  ]
+}

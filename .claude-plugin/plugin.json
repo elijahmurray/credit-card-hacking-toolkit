@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "credit-card-hacker",
+  "version": "0.1.0",
+  "description": "AI-powered credit card churning. Skills + reference data for picking your next card, hitting min spend, deciding when to cancel/downgrade/keep, hunting elevated and NLL offers, planning bank-bonus runs, and avoiding shutdowns. Try: 'What card should I get next?' or 'Should I keep my Sapphire Reserve another year?'. After install, run /credit-card-hacker:getting-started to build your card profile.",
+  "author": {
+    "name": "Elijah Murray"
+  },
+  "license": "MIT",
+  "keywords": [
+    "credit-cards",
+    "churning",
+    "points",
+    "miles",
+    "rewards",
+    "signup-bonus",
+    "travel-hacking"
+  ]
+}

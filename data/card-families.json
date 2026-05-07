@@ -1,0 +1,87 @@
+{
+  "_meta": {
+    "last_updated": "2026-05-06",
+    "staleness_days": 180,
+    "primary_sources": [
+      "https://frequentmiler.com/complete-guide-to-credit-card-application-rules-by-bank/"
+    ],
+    "notes": "Family lockouts are the second-most-common cause of failed applications, after 5/24. Track the FAMILY-level rules separately from per-product rules."
+  },
+  "families": {
+    "chase_sapphire": {
+      "members": ["Chase Sapphire Preferred", "Chase Sapphire Reserve", "Chase Sapphire (legacy, no longer issued)"],
+      "rule": "Family-level 48-month SUB lockout. Cannot earn SUB on any Sapphire if you currently hold any OR earned a Sapphire SUB in past 48 months.",
+      "workaround": "Product-change Sapphire to Freedom Unlimited or Freedom Flex before reapplying. Wait 48 months from prior SUB earn date.",
+      "confidence": "VERIFIED"
+    },
+    "chase_ink": {
+      "members": ["Ink Business Preferred", "Ink Business Cash", "Ink Business Unlimited", "Ink Business Premier"],
+      "rule": "NO family-level lockout (as of 2026). Each card has its own 24-month SUB clock per product.",
+      "workaround": "Stagger applications 1/30 (or 1/90 to be safe) and rotate through all four products.",
+      "confidence": "LIKELY",
+      "notes": "Ink applications are submitted through chase.com/business; many users churn 2-3 Inks per year between P1 and P2."
+    },
+    "amex_platinum": {
+      "members": ["Amex Personal Platinum", "Amex Schwab Platinum", "Amex Morgan Stanley Platinum", "Amex Goldman Platinum (defunct)", "Amex Business Platinum"],
+      "rule": "Each variant has its OWN once-per-lifetime SUB clock. Personal Plat and Business Plat are separate. Schwab/MS/Goldman flavors are separate from Personal Plat.",
+      "workaround": "After earning Personal Plat SUB, you can still get Schwab Plat SUB and Business Plat SUB.",
+      "confidence": "VERIFIED",
+      "notes": "Watch for offer-language variations. Some elevated offers explicitly omit the 'related cards' language; those are the SUB-second-time opportunities."
+    },
+    "amex_gold": {
+      "members": ["Amex Personal Gold", "Amex Business Gold", "Amex Premier Rewards Gold (legacy)"],
+      "rule": "Personal Gold and Business Gold are separate SUB clocks.",
+      "confidence": "VERIFIED"
+    },
+    "amex_green": {
+      "members": ["Amex Green"],
+      "rule": "Single product, once-per-lifetime SUB.",
+      "confidence": "VERIFIED"
+    },
+    "amex_delta": {
+      "members": ["Delta Blue", "Delta Gold", "Delta Platinum", "Delta Reserve", "Delta Gold Business", "Delta Platinum Business", "Delta Reserve Business"],
+      "rule": "Each product has its own once-per-lifetime clock per offer terms. Business and personal versions of same tier are separate.",
+      "confidence": "VERIFIED"
+    },
+    "amex_hilton": {
+      "members": ["Hilton Honors", "Hilton Honors Surpass", "Hilton Honors Aspire", "Hilton Honors Business"],
+      "rule": "Each product has separate once-per-lifetime. Often elevated offers via Resy or referral.",
+      "confidence": "VERIFIED"
+    },
+    "amex_bonvoy": {
+      "members": ["Marriott Bonvoy Bevy (defunct)", "Marriott Bonvoy Brilliant", "Marriott Bonvoy Business"],
+      "rule": "Cross-issuer lockout with Chase Bonvoy cards. See application-rules.json -> cross_issuer_rules.chase_amex_marriott_24mo.",
+      "confidence": "VERIFIED"
+    },
+    "chase_marriott": {
+      "members": ["Marriott Bonvoy Boundless", "Marriott Bonvoy Bountiful", "Marriott Bonvoy (legacy Premier Plus)"],
+      "rule": "Cross-issuer lockout with Amex Bonvoy cards. 24-month SUB clock per product, with cross-family restrictions.",
+      "confidence": "VERIFIED"
+    },
+    "citi_strata": {
+      "members": ["Citi Strata Premier", "Citi Strata Elite"],
+      "rule": "48-month SUB rule per product, with some offers extending lockout across the Strata family. Read offer terms.",
+      "confidence": "LIKELY"
+    },
+    "citi_aadvantage": {
+      "members": ["Citi AAdvantage Platinum Select", "Citi AAdvantage Executive", "Citi AAdvantage Business", "Citi AAdvantage Mileup"],
+      "rule": "Each product has a 48-month SUB clock. Cross-issuer with Barclays AAdvantage Aviator.",
+      "confidence": "VERIFIED"
+    },
+    "barclays_aadvantage": {
+      "members": ["AAdvantage Aviator Red", "AAdvantage Aviator Silver", "AAdvantage Aviator Business"],
+      "rule": "24-month SUB clock per product. Often the only path to a second AA SUB after Citi AA, since Barclays is a separate issuer.",
+      "confidence": "VERIFIED"
+    },
+    "capital_one_venture": {
+      "members": ["Venture Rewards", "Venture X", "Venture One", "VentureOne Rewards"],
+      "rule": "48-month SUB clock per product on most. Venture X has its own.",
+      "confidence": "LIKELY"
+    },
+    "bilt": {
+      "members": ["Bilt Mastercard"],
+      "rule": "Single product. Important context: Bilt has NO traditional SUB. Earning is via 'Rent Day' double points and 1x rent payments. The 'churn' angle is rotation rewards, not SUB.",
+      "confidence": "VERIFIED"
+    }
+  }
+}

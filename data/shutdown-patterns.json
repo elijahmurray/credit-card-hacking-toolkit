@@ -1,0 +1,81 @@
+{
+  "_meta": {
+    "last_updated": "2026-05-06",
+    "staleness_days": 180,
+    "primary_sources": [
+      "https://frequentmiler.com/category/strategy/",
+      "https://www.doctorofcredit.com/?s=shutdown",
+      "r/churning shutdown DPs"
+    ],
+    "notes": "Patterns aggregated from public DPs. Each entry includes the trigger, observed outcome, and prevention. Confidence is based on number of corroborating reports."
+  },
+  "patterns": [
+    {
+      "issuer": "Chase",
+      "name": "RAT (Risk Assessment Team) shutdown",
+      "trigger": [
+        "Velocity: 5+ Chase apps in 6-12 months",
+        "Closing multiple Sapphire-family cards rapidly to chase SUBs",
+        "Heavy MS pattern within 1-3 months of new account",
+        "BT or large cash advance immediately after open"
+      ],
+      "outcome": "All Chase relationships closed simultaneously, including checking, savings, and points clawback if SUB recently earned. Reinstatement rare.",
+      "prevention": "Stay under 1 Chase product per 30 days. Avoid closing SUB-earned cards under 12 months. Keep organic-looking spend on new accounts.",
+      "confidence": "VERIFIED",
+      "sources": ["multiple FM and r/churning DPs"]
+    },
+    {
+      "issuer": "Amex",
+      "name": "Financial Review",
+      "trigger": [
+        "Single transaction >$10K on a card with limited history",
+        "Multiple new Amex cards in <30 days with rapid spend ramp",
+        "Mismatched income on application vs reported income"
+      ],
+      "outcome": "Cards locked pending submission of bank statements / tax returns / paystubs (4506-C). If review fails, all Amex products closed and points forfeited.",
+      "prevention": "Build account history before large transactions. Honest income reporting. Don't open 3+ Amex cards in a single month.",
+      "confidence": "VERIFIED"
+    },
+    {
+      "issuer": "Amex",
+      "name": "Relationship review (closure)",
+      "trigger": "Excessive cancel-after-SUB pattern across 5+ cards",
+      "outcome": "Future Amex applications denied. Existing accounts may stay open but flagged.",
+      "confidence": "LIKELY"
+    },
+    {
+      "issuer": "Citi",
+      "name": "Rapid-application shutdown",
+      "trigger": "3+ Citi cards in <30 days, often combined with bank-bonus chasing on Citi checking",
+      "outcome": "All Citi cards closed plus existing Citi banking products.",
+      "prevention": "Honor 8/65/95 rules with margin. Don't open Citi banking and credit simultaneously.",
+      "confidence": "LIKELY"
+    },
+    {
+      "issuer": "Barclays",
+      "name": "Aggressive churn shutdown",
+      "trigger": "Pattern of opening Aviator Red, hitting first-purchase SUB, closing within 90 days",
+      "outcome": "Future Barclays denials. Some users blacklisted.",
+      "confidence": "VERIFIED",
+      "notes": "Barclays Aviator Red SUB triggers on first purchase, not full MSR. Tempting to close immediately; they notice."
+    },
+    {
+      "issuer": "Capital One",
+      "name": "Auto-decline pattern",
+      "trigger": "Income-to-debt mismatch, recent 3-bureau pulls, sub-prime credit history",
+      "outcome": "Application denied; recon rare.",
+      "prevention": "Apply when newest line of credit is ≥3 months old.",
+      "confidence": "LIKELY"
+    }
+  ],
+  "general_velocity_thresholds": {
+    "chase_safe": "≤1 Chase app per 30 days, ≤4 Chase apps per 12 months",
+    "chase_risky": "≥2 Chase apps per 30 days OR ≥5 per 6 months",
+    "amex_safe": "≤2 Amex apps per 30 days",
+    "amex_risky": "≥3 Amex apps per 30 days",
+    "citi_safe": "Honor 8/65/95",
+    "citi_risky": "≥3 Citi apps in <90 days",
+    "all_issuers_safe": "≤4 apps total per 30 days, ≤8 per 90 days",
+    "all_issuers_risky": "≥5 apps per 30 days"
+  }
+}
